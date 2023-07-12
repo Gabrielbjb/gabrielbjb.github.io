@@ -1,4 +1,5 @@
 <html><head><style>
+/* Slide Up when the user load the web */
   .slideInUp {
     -webkit-animation-name: slideInUp;
     animation-name: slideInUp;
@@ -29,32 +30,136 @@
     transform: translateY(0);
     }
   } 
-    .iconDetails {
-        margin-left:2%;
-        float:left; 
-        width:10%;	
-        padding:3%;
-   } 
-    .iconDetails2 {
-        margin-right: 7%;
-        float: right;
-        width: 10%;
-        padding:3%;
-   } 
-   .container2 {
-       width:100%;
-       height:auto;
-   }
-.wrapper { 
-  background-position: bottom center;
-  padding-bottom:10%;
-background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-background-size: 1800% 1800%;
 
--webkit-animation: rainbow 18s ease infinite;
--z-animation: rainbow 18s ease infinite;
--o-animation: rainbow 18s ease infinite;
-  animation: rainbow 18s ease infinite;}
+/* adjusting images and text */
+.iconDetails {
+    margin-left:2%;
+    float:left; 
+    width:10%;	
+    padding:3%;
+} 
+.first{
+    padding-bottom: 400px;
+    padding-top: 200px;
+}
+.iconDetails2 {
+    margin-right: 7%;
+    float: right;
+    width: 10%;
+    padding:3%;
+} 
+.container2 {
+    width:100%;
+    height:auto;
+}
+.firsttext{
+    margin-left: 20%;
+    padding-top: 4%;
+    padding-right: 10%;
+    
+}
+/* adjusting images and text (for 850px width screen) */
+@media screen and (max-width: 850px) {
+  .iconDetails {
+    width: 30%;
+    float: unset;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* bouncing image on programming language */
+.bouncedefault{
+    z-index: 9;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: bounce;
+}
+
+@keyframes bounce { 
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .js{
+        position: absolute !important;
+        z-index: 9 !important;
+        animation-duration: 6s !important;
+        animation-iteration-count: infinite !important;
+        top: 26% !important;
+        left: 39% !important;
+    }
+    .vscode{
+        width: 8% !important;
+        top: 10% !important;
+        left: 47% !important;
+    }
+    .go{
+        width: 8% !important;
+        bottom: 48% !important;
+        left: 52% !important;
+    }
+    .py{
+        width: 6% !important;
+        top: 13% !important;
+        left: 60% !important;
+    }
+    .container2{
+        padding-top: 10%;
+    }
+    .firsttext{
+        margin: auto;
+        text-align: center;
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .js{
+        top: 31% !important;
+        left: 35% !important;
+        width: 7% !important;
+    }
+    .vscode{
+        width: 12% !important;
+        top: 10% !important;
+        left: 47% !important;
+    }
+    .go{
+        width: 11% !important;
+        bottom: 45% !important;
+        left: 53% !important;
+    }
+    .py{
+        width: 10% !important;
+        top: 27% !important;
+        left: 66% !important;
+    }
+    .container2{
+        padding-top: 20%;
+    }
+}
+
+/* rainbow animation on programming language */
+.wrapper { 
+    background-position: bottom center;
+    padding-bottom:10%;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;
+}
 
 @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}
@@ -75,44 +180,58 @@ background-size: 1800% 1800%;
     0%{background-position:0% 82%}
     50%{background-position:100% 19%}
     100%{background-position:0% 82%}
-}</style>
+}
+
+/* test */
+
+.animatedBackground {
+/*adjust s value for speed*/
+  animation: lompat 500s linear infinite;
+}
+
+@keyframes lompat {
+  from {
+    background-position: -10000px bottom, 1500px bottom, center bottom, 1500px top, 5001px top;
+    background-repeat: repeat-x, repeat-x, no-repeat, repeat-x, repeat-x;
+    background-size: auto, auto, 300px, 700px, 700px;
+  }
+/*use negative width if you want it to flow right to left else and positive for left to right*/
+  to {
+    background-position: 0px bottom, 0px bottom, center bottom, 0px top, 0px top;
+    background-size: auto, auto, 300px, 700px, 700px;
+    background-repeat: repeat-x, repeat-x, no-repeat, repeat-x, repeat-x;
+  }
+}
+</style>
 </head><body style="background: black;">
-
-
-    <section style="
-    background-image: url(https://vignette.wikia.nocookie.net/growtopia/images/4/43/FII1.png/revision/latest?cb=20200831072703&amp;path-prefix=id), linear-gradient(#2491ef,#60b2f2,#60d6f2);
+    <section class= "animatedBackground first" style="
+    background-image: url(https://png.pngtree.com/png-vector/20221001/ourmid/pngtree-green-ground-with-trees-and-brown-soil-gaming-background-clipart-png-image_6239984.png), url(/image/water.png), url(/image/sun.png), url(/image/awan1.png), url(/image/awan2.png), linear-gradient(#ff3f0f,#ff870f,#ffc121,#f5ff85,#deef24);
     background-repeat: repeat-x;
     background-position: bottom center;
-    padding-bottom: 42%;
-    padding-top: 20%;
     ">
         <div class="container2">
             <div>
                 <img src="https://avatars.githubusercontent.com/u/111344809?s=400&u=5140d1cba16c52c02855116f1ff8848128ab8c44&v=4" class="iconDetails" style="border-radius: 50%;">
             </div>	
-            <div style="margin-left: 20%;padding-top: 4%;padding-right: 10%;">
+            <div class= "firsttext">
                 <h1 class="slideInUp">Welcome To My Website!</h1>
-                <div class="slideInUp" style="font-size: 16px;">Hello there! I'm gabrielbjb, welcome to my website! Yes, I know my website isn't great, but it's the best I can do. Come on, join me in exploring this website by scrolling down!
+                <div class="slideInUp" style="font-size: 16px;">Hello there! I'm gabrielbjb, welcome to my website! Yes, I know my website isn't great, but it's the best I can do. Come! Join me exploring this website by scrolling down!
 </div>
             </div>
         </div>
     </section>
 
-    <section class="wrapper" style="
-    padding-top: 0%;
-">
-        <div class="container2">
+    <section class="wrapper" style="padding-top: 0%;">
+        <div class="container2" style=" position: relative;">
             <div>
-                <img src="https://apps.bmkg.go.id/assets/img/info/iklim.png" class="iconDetails2">
+                <a href="https://code.visualstudio.com/"><img class="bouncedefault vscode" style="width:5%;position: absolute;z-index: 9;bottom: -49%;left: 80%;animation-duration: 3s;animation-iteration-count: infinite;" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"></a>
+                <a href="https://www.python.org/"><img class="bouncedefault py" style="width:5%;position: absolute;z-index: 9;bottom: -22%;left: 87%;animation-duration: 4s;animation-iteration-count: infinite;" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"></a>
+                <a href="https://go.dev/"><img class="bouncedefault go" style="width: 5%;position: absolute;z-index: 9;bottom: 20%;left: 78%;animation-duration: 10s;animation-iteration-count: infinite;" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg"></a>
+                <a href="https://www.javascript.com/"><img class="bouncedefault js" style="width:5%;position: absolute;z-index: 9;bottom: 42%;left: 90%;animation-duration: 6s;animation-iteration-count: infinite;" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"></a>
             </div>	
             <div style="margin-left: 5%;padding-top: 7%;padding-right: 20%;">
                 <h1 class="slideInUp">print("Developers")</h1>
-                <div class="slideInUp" style="font-size: 16px;">Yes, I am a developer (not a UI designer) and currently I can code in GO, Python, Web (CSS, HTML), Pascal, and C++! I am currently learning JavaScript. I can also create Discord bots using Python. If you're interested, you can DM me on Discord!
-
-
-
-
-</div>
+                <div class="slideInUp" style="font-size: 16px;">Yes, I'm a developer (not a UI designer) and currently I can code in GO, Python, Web (CSS, HTML), Pascal, and C++! I am currently learning JavaScript. I can also create Discord bots using Python. If you're interested, you can DM me on Discord!</div>
             </div>
         </div>
     </section>
@@ -121,7 +240,7 @@ background-size: 1800% 1800%;
     background-position: top;
     padding-bottom: 42%;
     padding-top: 20%;
-    background-color: grey;
+    background-color: #2e2e2e;
     background-blend-mode: multiply;
     ">
         <div class="container2">
@@ -130,8 +249,7 @@ background-size: 1800% 1800%;
             </div>	
             <div style="margin-left: 20%;padding-top: 4%;padding-right: 10%;color: white;">
                 <h1 class="slideInUp">Student and StuDying!</h1>
-                <div class="slideInUp" style="font-size: 16px;">I'm still a student. I'm studying Computer Engineering at Telkom University in Bandung. There are many item I want to learn, such as networking, cybersecurity, database, and so on.
-</div>
+                <div class="slideInUp" style="font-size: 16px;">I'm still a student. I'm studying Computer Engineering at Telkom University in Bandung. There are many stuff I want to learn, such as networking, cybersecurity, database, and so on.</div>
             </div>
         </div>
     </section>

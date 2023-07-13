@@ -178,47 +178,13 @@
     }
 }
 
-/* rainbow animation on programming language */
-.wrapper { 
-    background-position: bottom center;
-    padding-bottom:10%;
-    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-    background-size: 1800% 1800%;
-    -webkit-animation: rainbow 18s ease infinite;
-    -z-animation: rainbow 18s ease infinite;
-    -o-animation: rainbow 18s ease infinite;
-    animation: rainbow 18s ease infinite;
-}
-
-@-webkit-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-moz-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@-o-keyframes rainbow {
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-@keyframes rainbow { 
-    0%{background-position:0% 82%}
-    50%{background-position:100% 19%}
-    100%{background-position:0% 82%}
-}
-
 /* test */
 
-.animatedBackground {
-/*adjust s value for speed*/
-  animation: lompat 500s linear infinite;
+.animatedBackground1 {
+  animation: animated1 500s linear infinite;
 }
 
-@keyframes lompat {
+@keyframes animated1 {
   from {
     background-position: -10000px bottom, 1500px bottom, center bottom, 1500px top, 5001px top;
     background-repeat: repeat-x, repeat-x, no-repeat, repeat-x, repeat-x;
@@ -231,9 +197,25 @@
     background-repeat: repeat-x, repeat-x, no-repeat, repeat-x, repeat-x;
   }
 }
+
+.animatedBackground2 {
+  animation: animated2 7000s linear infinite;
+}
+
+@keyframes animated2 {
+  from {
+    background-position: -10000px bottom, -20000px bottom, center bottom;
+    background-repeat: repeat-x, repeat-x, no-repeat;
+  }
+/*use negative width if you want it to flow right to left else and positive for left to right*/
+  to {
+    background-position: 0px bottom, 0px bottom, center bottom;
+    background-repeat: repeat-x, repeat-x, no-repeat;
+  }
+}
 </style>
 </head><body style="background: black;">
-    <section class= "animatedBackground first" style="
+    <section class= "animatedBackground1 first" style="
     background-image: url(https://png.pngtree.com/png-vector/20221001/ourmid/pngtree-green-ground-with-trees-and-brown-soil-gaming-background-clipart-png-image_6239984.png), url(/image/water.png), url(/image/sun.png), url(/image/awan1.png), url(/image/awan2.png), linear-gradient(#ff3f0f,#ff870f,#ffc121,#f5ff85,#deef24);
     background-repeat: repeat-x;
     background-position: bottom center;
@@ -250,7 +232,14 @@
         </div>
     </section>
 
-    <section class="wrapper" style="padding-top: 0%;">
+    <section class="animatedBackground2" style="
+        padding-top: 0%;
+        padding-bottom: 26%;
+        background-image: url(/image/bintangyes.PNG),url(/image/bintangno.PNG), url(/image/peakpx.jpg);
+        background-repeat: repeat-x;
+        background-position: bottom center;
+        color: white;
+    ">
         <div class="container2" style=" position: relative;">
             <div>
                 <a href="https://code.visualstudio.com/"><img class="bouncedefault vscode" style="width:5%;position: absolute;z-index: 9;bottom: -49%;left: 80%;animation-duration: 3s;animation-iteration-count: infinite;" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"></a>

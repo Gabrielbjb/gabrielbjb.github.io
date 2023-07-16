@@ -184,6 +184,7 @@
   animation: animated1 500s linear infinite;
 }
 
+
 @keyframes animated1 {
   from {
     background-position: -10000px bottom, 1500px bottom, center bottom, 1500px top, 5001px top;
@@ -213,6 +214,18 @@
     background-repeat: repeat-x, repeat-x, no-repeat;
   }
 }
+.animatedBackground3 {
+    animation: animated3 7000s linear infinite;
+} 
+@keyframes animated3 {
+  from {
+    background-position: -10000px bottom, -20000px bottom,-15000px bottom ,9000px bottom;
+  }
+/*use negative width if you want it to flow right to left else and positive for left to right*/
+  to {
+    background-position: 0px bottom, 0px bottom,0px bottom ,0px bottom;
+  }
+} 
 </style>
 </head><body style="background: black;">
     <section class= "animatedBackground1 first" style="
@@ -254,13 +267,13 @@
         </div>
     </section>
 <section style="
-    background-image: url(https://lms.telkomuniversity.ac.id/pluginfile.php/1/theme_remui/loginsettingpic/1686218642/background-lms-2k.jpg);
+    background-image: url(/image/orang1.png), url(/image/orang3.png), url(/image/orang2.png),url(/image/school.png), linear-gradient(#329d82,#45104a);
     background-position: top;
-    padding-bottom: 42%;
+    padding-bottom: 26%;
     padding-top: 20%;
-    background-color: #2e2e2e;
-    background-blend-mode: multiply;
-    ">
+    background-repeat: repeat-x;
+    " class="animatedBackground3
+  ">
         <div class="container2">
             <div>
                 <img src="https://w7.pngwing.com/pngs/543/934/png-transparent-google-app-logo-google-logo-g-suite-google-text-logo-circle.png" class="iconDetails" style="border-radius: 50%;">

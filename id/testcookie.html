@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<p id="demo"></p>
+<script>
+function saveCookie(result) {
+  document.cookie = "language="+result;
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  var cookieArray = document.cookie;
+  cookieArray = cookieArray.split(';');
+  if (cookieArray[0].includes(name)){
+  	return cookieArray[0];
+  }
+  return ""
+}
+
+function checkCookie() {
+  var language = getCookie("language");
+  language = language.split('=');
+  if (language[1] == "id") {
+    document.getElementById("demo").innerHTML = "indonesia";
+  } else if (language[1] == "en"){
+  	document.getElementById("demo").innerHTML = "english";
+    window.setTimeout(function(){
+        location.href = "https://www.w3schools.com/";
+    }, 5000);
+  }
+}
+</script>
+</head>
+
+<body onload="checkCookie()"></body>
+<button onclick="saveCookie('en')">English</button>
+<button onclick="saveCookie('id')">Indonesia</button>
+</html>

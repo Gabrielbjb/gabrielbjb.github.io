@@ -1,4 +1,4 @@
-<html style="background-image: url(file:///C:/Users/Gabrielbjb/Desktop/brush.png),url(file:///C:/Users/Gabrielbjb/Desktop/brush2.png), linear-gradient(#31a3aa,#8fce96);background-position: bottom right,bottom left;background-repeat: no-repeat;height: 100%;"><head>
+<html style="background-image: url(/src/brush.png),url(/src/brush2.png), linear-gradient(#31a3aa,#8fce96);background-position: bottom right,bottom left;background-repeat: no-repeat;height: 100%;"><head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>    .img {
     position: absolute;
@@ -47,12 +47,12 @@
     <body onload="checkCookie()" style="
 ">
 <div class="img" style="position: absolute;left: 50%;bottom: 0px;transform: translate(-50%, 0%);margin: 0 auto;">
-    <img src="file:///C:/Users/Gabrielbjb/Desktop/bunbun.png" style="
+    <img src="/src/bunbun.png" style="
     width: 42%;
 ">
 <div class="hover_img" style="left: 59%;transform: translate(-50%, 0%);top: -1%;"><div style="
     position: relative;
-"><img src="file:///C:/Users/Gabrielbjb/Desktop/chat.png" style="
+"><img src="/src/chat.png" style="
     width: 100%;
 ">
     <p id="bunbun" style="
@@ -95,12 +95,12 @@
       var language = getCookie("language");
       language = language.split('=');
       if (language[1] == "id") {
-        document.getElementById("demo").innerHTML = "indonesia";
+        console.log("indonesia!");
         window.setTimeout(function(){
             location.href = "https://www.gabrielbjb.my.id/id/";
         }, 5000);
       } else if (language[1] == "en"){
-        document.getElementById("demo").innerHTML = "english";
+        console.log("english!");
         window.setTimeout(function(){
             location.href = "https://www.gabrielbjb.my.id/en/";
         }, 5000);

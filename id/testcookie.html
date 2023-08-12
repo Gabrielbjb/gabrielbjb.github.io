@@ -1,38 +1,127 @@
-<!DOCTYPE html>
-<html>
-<head>
-<p id="demo"></p>
-<script>
-function saveCookie(result) {
-  document.cookie = "language="+result;
-}
-
-function getCookie(cname) {
-  let name = cname + "=";
-  var cookieArray = document.cookie;
-  cookieArray = cookieArray.split(';');
-  if (cookieArray[0].includes(name)){
-  	return cookieArray[0];
-  }
-  return ""
-}
-
-function checkCookie() {
-  var language = getCookie("language");
-  language = language.split('=');
-  if (language[1] == "id") {
-    document.getElementById("demo").innerHTML = "indonesia";
-  } else if (language[1] == "en"){
-  	document.getElementById("demo").innerHTML = "english";
-    window.setTimeout(function(){
-        location.href = "https://www.w3schools.com/";
-    }, 5000);
-  }
-}
-</script>
+<html style="background-image: url(file:///C:/Users/Gabrielbjb/Desktop/brush.png),url(file:///C:/Users/Gabrielbjb/Desktop/brush2.png), linear-gradient(#31a3aa,#8fce96);background-position: bottom right,bottom left;background-repeat: no-repeat;height: 100%;"><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>    .img {
+    position: absolute;
+    }
+    .hover_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    transform: translate(107%, 13%);
+    }
+    .img:hover .hover_img {
+    display: inline;
+    }
+    .display{
+      display: flex;
+    }
+    .center{
+      justify-content: center;
+    }
+    .button{
+      width: 200px;
+      height: 50px;
+      background-color: #89c3d6;
+      box-shadow: 2px 2px #000;
+      border-radius: 5px;
+      color: #FFFFFF;
+      font-size: 20px;
+      text-shadow: 1.5px 1.5px rgba(0,0,0,.7);
+      font-family: Century Gothic, sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    .padding{
+      padding: 10px;
+    }
+    .makecenter{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
 </head>
+    <body onload="checkCookie()" style="
+">
+<div class="img" style="position: absolute;left: 50%;bottom: 0px;transform: translate(-50%, 0%);margin: 0 auto;">
+    <img src="file:///C:/Users/Gabrielbjb/Desktop/bunbun.png" style="
+    width: 42%;
+">
+<div class="hover_img" style="left: 59%;transform: translate(-50%, 0%);top: -1%;"><div style="
+    position: relative;
+"><img src="file:///C:/Users/Gabrielbjb/Desktop/chat.png" style="
+    width: 100%;
+">
+    <p id="bunbun" style="
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 32%;
+    left: 54%;
+    font-size: 78%;
+">If you see text, then you dont have cookie :(</p></div></div>
+</div>
+    <div class="makecenter">
+      <h1 id="teks" class="display center" style="text-align: center;">Kamu Berasal Darimana?</h1>
+      <div class="display center" style="flex-wrap: wrap !important;">
+      <div class="padding">
+        <a href="https://www.gabrielbjb.my.id/en/"><button onclick="saveCookie('en')" class="button">English</button></a>
+      </div>
+      <div class="padding">
+        <a href="https://www.gabrielbjb.my.id/id/"><button onclick="saveCookie('id')" class="button">Indonesia</button></a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function saveCookie(result) {
+      document.cookie = "language="+result;
+    }
 
-<body onload="checkCookie()"></body>
-<button onclick="saveCookie('en')">English</button>
-<button onclick="saveCookie('id')">Indonesia</button>
-</html>
+    function getCookie(cname) {
+      let name = cname + "=";
+      var cookieArray = document.cookie;
+      cookieArray = cookieArray.split(';');
+      if (cookieArray[0].includes(name)){
+        return cookieArray[0];
+      }
+      return ""
+    }
+
+
+    function checkCookie() {
+      var language = getCookie("language");
+      language = language.split('=');
+      if (language[1] == "id") {
+        document.getElementById("demo").innerHTML = "indonesia";
+        window.setTimeout(function(){
+            location.href = "https://www.gabrielbjb.my.id/id/";
+        }, 5000);
+      } else if (language[1] == "en"){
+        document.getElementById("demo").innerHTML = "english";
+        window.setTimeout(function(){
+            location.href = "https://www.gabrielbjb.my.id/en/";
+        }, 5000);
+      }
+    }
+
+    var texts = ["Click Button Below","Klik Tombol Dibawah Ini","Choose Your Language","Pilih Bahasa Kamu","Kamu Berasal Darimana?","Where Do You Come From?", "I'm Scorbunny! Nice to meet you!","Aku Scorbunny! Senang Bertemu Denganmu!","Kami menggunakan Cookie Disini. Jadi Pikirkan Matang Matang!","We use Cookie here. So Think Carefully!","Aku Imut","I'm Cute"];
+    var point = 0;
+
+    function changeText(){
+      document.getElementById("bunbun").innerHTML = texts[point+6];
+      document.getElementById("teks").innerHTML = texts[point];
+      if(point < (texts.length-6) - 1){
+        point ++;
+      }else{
+        point = 0;
+      }
+    }
+    changeText();
+    setInterval(changeText, 5000)
+  </script>
+
+
+</body></html>

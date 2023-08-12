@@ -68,16 +68,21 @@
       <h1 id="teks" class="display center" style="text-align: center;">Kamu Berasal Darimana?</h1>
       <div class="display center" style="flex-wrap: wrap !important;">
       <div class="padding">
-        <a href="https://www.gabrielbjb.my.id/en/"><button onclick="saveCookie('en')" class="button">English</button></a>
+        <button onclick="saveCookie('en')" class="button">English</button>
       </div>
       <div class="padding">
-        <a href="https://www.gabrielbjb.my.id/id/"><button onclick="saveCookie('id')" class="button">Indonesia</button></a>
+        <button onclick="saveCookie('id')" class="button">Indonesia</button>
       </div>
     </div>
   </div>
   <script>
     function saveCookie(result) {
       document.cookie = "language="+result;
+      if (result == "id"){
+        location.replace("https://gabrielbjb.my.id/id")
+      }else{
+        location.replace("https://gabrielbjb.my.id/en")
+      }
     }
 
     function getCookie(cname) {

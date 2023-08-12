@@ -47,7 +47,7 @@
     <body onload="checkCookie()" style="
 ">
 <div class="img" style="position: absolute;left: 50%;bottom: 0px;transform: translate(-50%, 0%);margin: 0 auto;">
-    <img src="/src/bunbun.png" style="
+    <img class="playsfx" onclick="sounds()" src="/src/bunbun.png" style="
     width: 42%;
 ">
 <div class="hover_img" style="left: 59%;transform: translate(-50%, 0%);top: -1%;"><div style="
@@ -126,6 +126,22 @@
     }
     changeText();
     setInterval(changeText, 5000)
+    function sounds(){
+      var rand = ['https://github.com/Gabrielbjb/gabrielbjb.github.io/raw/main/src/H1.mp3', 'https://github.com/Gabrielbjb/gabrielbjb.github.io/raw/main/src/H2.mp3', 'https://github.com/Gabrielbjb/gabrielbjb.github.io/raw/main/src/H3.mp3','https://github.com/Gabrielbjb/gabrielbjb.github.io/raw/main/src/H4.mp3','https://github.com/Gabrielbjb/gabrielbjb.github.io/raw/main/src/H5.mp3'];
+      var randSound = rand[Math.floor(Math.random() * rand.length)];
+      var player=document.getElementById('player');
+      var sourceMp3=document.getElementById('sourceMp3');
+      sourceMp3.src='' + randSound + '';
+      player.load();
+      player.play();
+}
+    function soundsstop(){
+      var player=document.getElementById('player');
+      player.pause();
+      player.currentTime = 0;
+    }
+    $('.playsfx').mouseenter(sounds);
+    $('.playsfx').mouseleave(soundsstop);
   </script>
 
 

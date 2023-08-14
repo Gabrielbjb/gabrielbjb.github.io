@@ -1,298 +1,154 @@
-<html><meta name="viewport" content="width=device-width, initial-scale=1"><head>      
-  <!-- NavBar -->
-  <link href="/css/topnav.css" rel="stylesheet">
-  <style>
-/* Slide Up when the user load the web */
-  .slideInUp {
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+<html style="background-image: url(/src/brush.png),url(/src/brush2.png), linear-gradient(#31a3aa,#8fce96);background-position: bottom right,bottom left;background-repeat: no-repeat;height: 100%;"><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <style>    .img {
+    position: absolute;
     }
-    @-webkit-keyframes slideInUp {
-    0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    visibility: visible;
+    .hover_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    transform: translate(107%, 13%);
     }
-    100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    .img:hover .hover_img {
+    display: inline;
     }
+    .display{
+      display: flex;
     }
-    @keyframes slideInUp {
-    0% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    visibility: visible;
+    .center{
+      justify-content: center;
     }
-    100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+    .button{
+      width: 200px;
+      height: 50px;
+      background-color: #89c3d6;
+      box-shadow: 2px 2px #000;
+      border-radius: 5px;
+      color: #FFFFFF;
+      font-size: 20px;
+      text-shadow: 1.5px 1.5px rgba(0,0,0,.7);
+      font-family: Century Gothic, sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
     }
-  } 
-
-/* adjusting images and text */
-.iconDetails {
-    margin-left:2%;
-    float:left; 
-    width:10%;	
-    padding:3%;
-} 
-.first{
-    padding-bottom: 400px;
-    padding-top: 200px;
-}
-.iconDetails2 {
-    margin-right: 7%;
-    float: right;
-    width: 10%;
-    padding:3%;
-} 
-.container2 {
-    width:100%;
-    height:auto;
-}
-.firsttext{
-    margin-left: 20%;
-    padding-top: 4%;
-    padding-right: 10%;
-    
-}
-/* adjusting images and text (for 850px width screen) */
-@media screen and (max-width: 850px) {
-  .iconDetails {
-    width: 30%;
-    float: unset;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-}
-
-/* bouncing image on programming language */
-.bouncedefault{
-    z-index: 9;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-name: bounce;
-}
-
-@keyframes bounce { 
-    0% {
-        transform: translateY(0);
+    .padding{
+      padding: 10px;
     }
-    50% {
-        transform: translateY(-20px);
+    .makecenter{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
-    100% {
-        transform: translateY(0);
-    }
-}
-@media screen and (min-width: 850px) {
-    .secondtext{
-        margin-left: 5%;
-        padding-top: 7%;
-        padding-right: 20%;
-    }
-}
-@media screen and (max-width: 850px) {
-    .js{
-        top: 26% !important;
-        left: 39% !important;
-    }
-    .vscode{
-        width: 8% !important;
-        top: 10% !important;
-        left: 47% !important;
-    }
-    .go{
-        width: 8% !important;
-        bottom: 48% !important;
-        left: 52% !important;
-    }
-    .py{
-        width: 6% !important;
-        top: 13% !important;
-        left: 60% !important;
-    }
-    .container2{
-        padding-top: 10%;
-    }
-    .firsttext{
-        margin: auto;
-        text-align: center;
-        padding: 5%;
-
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .js{
-        top: 31% !important;
-        left: 35% !important;
-        width: 7% !important;
-    }
-    .vscode{
-        width: 12% !important;
-        top: 10% !important;
-        left: 47% !important;
-    }
-    .go{
-        width: 11% !important;
-        bottom: 45% !important;
-        left: 53% !important;
-    }
-    .py{
-        width: 10% !important;
-        top: 27% !important;
-        left: 66% !important;
-    }
-    .container2{
-        padding-top: 20%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .js{
-        top: 18% !important;
-        left: 8% !important;
-        width: 9% !important;
-    }
-    .vscode{
-        width: 12% !important;
-        top: 10% !important;
-        left: 29% !important;
-    }
-    .go{
-        width: 18% !important;
-        bottom: 71% !important;
-        left: 79% !important;
-    }
-    .py{
-        width: 11% !important;
-        top: 16% !important;
-        left: 63% !important;
-    }
-    .container2{
-        padding-top: 10%;
-    }
-}
-
-/* test */
-
-.animatedBackground1 {
-  animation: animated1 500s linear infinite;
-}
-
-
-@keyframes animated1 {
-  from {
-    background-position: -10000px bottom, 1500px bottom, center bottom, 1500px top, 5001px top;
-    background-repeat: repeat-x, repeat-x, no-repeat, repeat-x, repeat-x;
-    background-size: auto, auto, 300px, 700px, 700px;
-  }
-/*use negative width if you want it to flow right to left else and positive for left to right*/
-  to {
-    background-position: 0px bottom, 0px bottom, center bottom, 0px top, 0px top;
-    background-size: auto, auto, 300px, 700px, 700px;
-    background-repeat: repeat-x, repeat-x, no-repeat, repeat-x, repeat-x;
-  }
-}
-
-.animatedBackground2 {
-  animation: animated2 7000s linear infinite;
-}
-
-@keyframes animated2 {
-  from {
-    background-position: -10000px bottom, -20000px bottom, center bottom;
-    background-repeat: repeat-x, repeat-x, no-repeat;
-  }
-/*use negative width if you want it to flow right to left else and positive for left to right*/
-  to {
-    background-position: 0px bottom, 0px bottom, center bottom;
-    background-repeat: repeat-x, repeat-x, no-repeat;
-  }
-}
-.animatedBackground3 {
-    animation: animated3 7000s linear infinite;
-} 
-@keyframes animated3 {
-  from {
-    background-position: -10000px bottom, -20000px bottom,-15000px bottom ,9000px bottom;
-  }
-/*use negative width if you want it to flow right to left else and positive for left to right*/
-  to {
-    background-position: 0px bottom, 0px bottom,0px bottom ,0px bottom;
-  }
-} 
-</style>
-</head><body style="margin: 0;">
-      <div class="topnav" id="myTopnav">
-        <a href="/id/" class="active">Indonesia 🇮🇩</a>
-        <a href="/en/donasi/">Donation</a>
-        <a href="/en/projek/">Project</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    <section class= "animatedBackground1 first" style="
-    background-image: url(https://png.pngtree.com/png-vector/20221001/ourmid/pngtree-green-ground-with-trees-and-brown-soil-gaming-background-clipart-png-image_6239984.png), url(/image/water.png), url(/image/sun.png), url(/image/awan1.png), url(/image/awan2.png), linear-gradient(#ff3f0f,#ff870f,#ffc121,#f5ff85,#deef24);
-    background-repeat: repeat-x;
-    background-position: bottom center;
-    ">
-        <div class="container2">
-            <div>
-                <img src="https://avatars.githubusercontent.com/u/111344809?s=400&u=5140d1cba16c52c02855116f1ff8848128ab8c44&v=4" class="iconDetails" style="border-radius: 50%;">
-            </div>	
-            <div class= "firsttext">
-                <h1 class="slideInUp">Welcome To My Website!</h1>
-                <div class="slideInUp" style="font-size: 16px;">Hello there! I'm gabrielbjb, welcome to my website! Yes, I know my website isn't great, but it's the best I can do. Come! Join me exploring this website by scrolling down!
+  </style>
+</head>
+    <body onload="checkCookie()" style="
+">
+<div class="img" style="position: absolute;left: 50%;bottom: 0px;transform: translate(-50%, 0%);margin: 0 auto;">
+    <img class="playsfx" onclick="sounds()" src="/src/bunbun.png" style="
+    width: 42%;
+    cursor: pointer;
+">
+<div class="hover_img" style="left: 59%;transform: translate(-50%, 0%);top: -1%;"><div style="
+    position: relative;
+"><img src="/src/chat.png" style="
+    width: 100%;
+">
+    <p id="bunbun" style="
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 32%;
+    left: 54%;
+    font-size: 78%;
+">If you see text, then you dont have cookie :(</p></div></div>
 </div>
-            </div>
-        </div>
-    </section>
+    <div class="makecenter">
+      <h1 id="teks" class="display center" style="text-align: center;">Kamu Berasal Darimana?</h1>
+      <div class="display center" style="flex-wrap: wrap !important;">
+      <div class="padding">
+        <button onclick="saveCookie('en')" class="button">English</button>
+      </div>
+      <div class="padding">
+        <button onclick="saveCookie('id')" class="button">Indonesia</button>
+      </div>
+    </div>
+    <audio id="player">
+      <source id="sourceMp3" src="" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <script>
+    function saveCookie(result) {
+      document.cookie = "language="+result;
+      if (result == "id"){
+        location.replace("https://gabrielbjb.my.id/id")
+      }else{
+        location.replace("https://gabrielbjb.my.id/en")
+      }
+    }
 
-    <section class="animatedBackground2" style="
-        padding-top: 0%;
-        padding-bottom: 26%;
-        background-image: url(/image/bintangyes.png),url(/image/bintangno.png), url(/image/peakpx.jpg);
-        background-repeat: repeat-x;
-        background-position: bottom center;
-        color: white;
-    ">
-        <div class="container2" style=" position: relative;">
-            <div>
-                <a href="https://code.visualstudio.com/"><img class="bouncedefault vscode" style="width:5%;position: absolute;z-index: 9;bottom: -49%;left: 80%;animation-duration: 3s;animation-iteration-count: infinite;" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg"></a>
-                <a href="https://www.python.org/"><img class="bouncedefault py" style="width:5%;position: absolute;z-index: 9;bottom: -22%;left: 87%;animation-duration: 4s;animation-iteration-count: infinite;" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"></a>
-                <a href="https://go.dev/"><img class="bouncedefault go" style="width: 5%;position: absolute;z-index: 9;bottom: 20%;left: 78%;animation-duration: 10s;animation-iteration-count: infinite;" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg"></a>
-                <a href="https://www.javascript.com/"><img class="bouncedefault js" style="width:5%;position: absolute;z-index: 9;bottom: 42%;left: 90%;animation-duration: 6s;animation-iteration-count: infinite;" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"></a>
-            </div>	
-            <div class= "firsttext secondtext">
-                <h1 class="slideInUp">Developers</h1>
-                <div class="slideInUp" style="font-size: 16px;">Yes, I'm a developer (not a UI designer). And currently, I can code in GO, Python, Web (CSS, HTML), Pascal, and C++! I'm still learning JavaScript. I can also create Discord bots using Python. If you're interested, you can DM me on Discord!</div>
-            </div>
-        </div>
-    </section>
-<section style="
-    background-image: url(/image/orang1.png), url(/image/orang3.png), url(/image/orang2.png),url(/image/school.png), linear-gradient(#329d82,#45104a);
-    background-position: top;
-    padding-bottom: 26%;
-    padding-top: 20%;
-    background-repeat: repeat-x;
-    " class="animatedBackground3
-  ">
-        <div class="container2">
-            <div>
-                <img src="/image/schoolbuilding.png" class="iconDetails" style="border-radius: 50%;">
-            </div>	
-            <div style="margin-left: 20%;padding-top: 4%;padding-right: 10%;color: white;">
-                <h1 class="slideInUp">Student and StuDying!</h1>
-                <div class="slideInUp" style="font-size: 16px;">I'm still a student. I'm studying Computer Engineering at Telkom University in Bandung. There are many stuff I want to learn, such as networking, cybersecurity, database, and more.</div>
-            </div>
-        </div>
-    </section>
+    function getCookie(cname) {
+      let name = cname + "=";
+      var cookieArray = document.cookie;
+      cookieArray = cookieArray.split(';');
+      if (cookieArray[0].includes(name)){
+        return cookieArray[0];
+      }
+      return ""
+    }
+
+
+    function checkCookie() {
+      var language = getCookie("language");
+      language = language.split('=');
+      if (language[1] == "id") {
+        console.log("indonesia!");
+        window.setTimeout(function(){
+            location.href = "https://www.gabrielbjb.my.id/id/";
+        }, 5000);
+      } else if (language[1] == "en"){
+        console.log("english!");
+        window.setTimeout(function(){
+            location.href = "https://www.gabrielbjb.my.id/en/";
+        }, 5000);
+      }
+    }
+
+    var texts = ["Click Button Below","Klik Tombol Dibawah Ini","Choose Your Language","Pilih Bahasa Kamu","Kamu Berasal Darimana?","Where Do You Come From?", "I'm Scorbunny! Nice to meet you!","Aku Scorbunny! Senang Bertemu Denganmu!","Kami menggunakan Cookie Disini. Jadi Pikirkan Matang Matang!","We use Cookie here. So Think Carefully!","Aku Imut","I'm Cute"];
+    var point = 0;
+
+    function changeText(){
+      document.getElementById("bunbun").innerHTML = texts[point+6];
+      document.getElementById("teks").innerHTML = texts[point];
+      if(point < (texts.length-6) - 1){
+        point ++;
+      }else{
+        point = 0;
+      }
+    }
+    changeText();
+    setInterval(changeText, 5000)
+    function sounds(){
+      var rand = ['https://github.com/Gabrielbjb/gabrielbjb.github.io/raw/main/src/H1.mp3', 'https://github.com/Gabrielbjb/gabrielbjb.github.io/raw/main/src/H2.mp3', 'https://github.com/Gabrielbjb/gabrielbjb.github.io/raw/main/src/H3.mp3','https://github.com/Gabrielbjb/gabrielbjb.github.io/raw/main/src/H4.mp3','https://github.com/Gabrielbjb/gabrielbjb.github.io/raw/main/src/H5.mp3'];
+      var randSound = rand[Math.floor(Math.random() * rand.length)];
+      var player=document.getElementById('player');
+      var sourceMp3=document.getElementById('sourceMp3');
+      sourceMp3.src='' + randSound + '';
+      player.load();
+      player.play();
+}
+    function soundsstop(){
+      var player=document.getElementById('player');
+      player.pause();
+      player.currentTime = 0;
+    }
+    $('.playsfx').mouseenter(sounds);
+    $('.playsfx').mouseleave(soundsstop);
+  </script>
+
+
 </body></html>

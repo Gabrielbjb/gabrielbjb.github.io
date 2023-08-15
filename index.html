@@ -1,7 +1,8 @@
 <html style="background-image: url(/src/brush.png),url(/src/brush2.png), linear-gradient(#31a3aa,#8fce96);background-position: bottom right,bottom left;background-repeat: no-repeat;height: 100%;"><head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <style>    .img {
+  <style>    
+    .img {
     position: absolute;
     }
     .hover_img {
@@ -13,6 +14,11 @@
     }
     .img:hover .hover_img {
     display: inline;
+    }
+    @media screen and (min-width: 740px) {
+      .img{
+        width: 410px;
+      }
     }
     .display{
       display: flex;
@@ -41,6 +47,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
+      width: 100%;
       transform: translate(-50%, -50%);
     }
   </style>
@@ -64,6 +71,7 @@
     top: 32%;
     left: 54%;
     font-size: 78%;
+    width: 70%;
 ">If you see text, then you dont have cookie :(</p></div></div>
 </div>
     <div class="makecenter">

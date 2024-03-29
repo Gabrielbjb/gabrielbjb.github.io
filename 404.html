@@ -41,8 +41,9 @@ body{
 <body onload="checkCookie()" style="background: black;">
 	<div id="main">
 	    	<div class="fof">
-	        	<h1>Error 404</h1>
-			<h6>Nothing to see here hehehehehehehehehe</h6>
+	        	<h1>404</h1>
+			<h6 id='description'>Sorry! This Page Doesn't Exist (Also please turn on the JavaScript Permission 😊)</h6>
+			<h6 id='egg'>Sorry! This Page Doesn't Exist (Also please turn on the JavaScript Permission 😊)</h6>
 	    	</div>
 	</div>
 	<script>
@@ -59,9 +60,15 @@ body{
 		      var language = getCookie("language");
 		      language = language.split('=');
 		      if (language[1] == "id") {
-		        console.log("indonesia!");
+			      document.getElementById("description").innerHTML = "Maaf! Halaman "+window.location.search+" Yang Anda Cari Tidak Ada";
+			      if (window.location.search != ""){
+				      document.getElementById("description").innerHTML = "Kenapa anda menggunakan search? "+window.location.search+" itu tidak ada!"
+			      }
 		      } else if (language[1] == "en"){
-		        console.log("english!");
+			      document.getElementById("description").innerHTML = "Sorry! This Page "+window.location.search+" Doesn't Exist";
+			      if (window.location.search != ""){
+				      document.getElementById("description").innerHTML = "Also why are you using search? "+window.location.search+" doesnt exist!"
+			      }
 		      }
 	    	}
 	</script>

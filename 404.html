@@ -42,7 +42,7 @@ body{
 	<div id="main">
 	    	<div class="fof">
 	        	<h1>404</h1>
-			<h6 id='description'>Sorry! This Page Doesn't Exist (Also please turn on the JavaScript Permission 😊)</h6>
+			<h6 id='description'>Sorry! This Page Doesn't Exist</h6>
 			<h6 id='egg'></h6>
 	    	</div>
 	</div>
@@ -59,13 +59,18 @@ body{
 		function checkCookie() {
 		      var language = getCookie("language");
 		      language = language.split('=');
+		      if (window.location.pathname == "/404"){
+			      document.getElementById("description").innerHTML = "uhh???? why are you looking this page?";
+		      }
 		      if (language[1] == "id") {
-			      document.getElementById("description").innerHTML = "Maaf! Halaman "+window.location.search+" Yang Anda Cari Tidak Ada";
+			      document.title = 'Halaman Tidak Ditemukan';
+			      document.getElementById("description").innerHTML = "Maaf! Halaman "+window.location.pathname+" Yang Anda Cari Tidak Ada";
 			      if (window.location.search != ""){
 				      document.getElementById("egg").innerHTML = "Kenapa anda menggunakan search? "+window.location.search+" itu tidak ada!"
 			      }
 		      } else if (language[1] == "en"){
-			      document.getElementById("description").innerHTML = "Sorry! This Page "+window.location.search+" Doesn't Exist";
+			      document.title = 'Page Not Found';
+			      document.getElementById("description").innerHTML = "Sorry! This Page "+window.location.pathname+" Doesn't Exist";
 			      if (window.location.search != ""){
 				      document.getElementById("egg").innerHTML = "Also why are you using search? "+window.location.search+" doesnt exist!"
 			      }

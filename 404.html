@@ -46,6 +46,15 @@ body{
 	    	</div>
 	</div>
 	<script>
+		function getCookie(cname) {
+		      let name = cname + "=";
+		      var cookieArray = document.cookie;
+		      cookieArray = cookieArray.split(';');
+		      if (cookieArray[0].includes(name)){
+		        return cookieArray[0];
+		      }
+		      return ""
+		 }
 		function checkCookie() {
 		      var language = getCookie("language");
 		      language = language.split('=');

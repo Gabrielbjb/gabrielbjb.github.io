@@ -45,15 +45,15 @@ body{
 			<h6>Nothing to see here hehehehehehehehehe</h6>
 	    	</div>
 	</div>
+	<script>
+		function checkCookie() {
+		      var language = getCookie("language");
+		      language = language.split('=');
+		      if (language[1] == "id") {
+		        console.log("indonesia!");
+		      } else if (language[1] == "en"){
+		        console.log("english!");
+		      }
+	    	}
+	</script>
 </body>
-<script>
-	function checkCookie() {
-	      var language = getCookie("language");
-	      language = language.split('=');
-	      if (language[1] == "id") {
-	        console.log("indonesia!");
-	      } else if (language[1] == "en"){
-	        console.log("english!");
-	      }
-    }
-</script>

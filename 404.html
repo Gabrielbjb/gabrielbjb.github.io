@@ -38,7 +38,7 @@ body{
 }
 </style>
 <title>404</title>
-<body style="background: black;">
+<body onload="checkCookie()" style="background: black;">
 	<div id="main">
 	    	<div class="fof">
 	        	<h1>Error 404</h1>
@@ -46,3 +46,14 @@ body{
 	    	</div>
 	</div>
 </body>
+<script>
+	function checkCookie() {
+	      var language = getCookie("language");
+	      language = language.split('=');
+	      if (language[1] == "id") {
+	        console.log("indonesia!");
+	      } else if (language[1] == "en"){
+	        console.log("english!");
+	      }
+    }
+</script>

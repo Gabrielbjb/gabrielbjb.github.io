@@ -61,6 +61,7 @@ body{
 		      language = language.split('=');
 		      if (window.location.pathname == "/404"){
 			      document.getElementById("description").innerHTML = "uhh???? why are you looking this page?";
+			      return
 		      }
 		      if (language[1] == "id") {
 			      document.title = 'Halaman Tidak Ditemukan';

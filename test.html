@@ -81,7 +81,7 @@
 ">
         <div class="file-input-wrapper">
             <input type="file" accept="image/*" name="new-image-button" id="new-image-button" class="file-input">
-            <span class="file-input-label">Masukan File</span>
+            <span class="file-input-label" id="file-input-label">Masukan File</span>
         </div>          
           </div>
           <div style="
@@ -139,8 +139,6 @@
       document.getElementById('new-image-button').addEventListener('change', function() {
             var label = document.getElementById('file-input-label');
             var input = this;
-            console.log(input.files[0].name);
-            console.log(input.files);
             if (input.files && input.files.length > 0) {
                 label.textContent = String(input.files[0].name);
             } else {

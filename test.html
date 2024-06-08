@@ -11,7 +11,17 @@
             padding: 70px 26px;
             border-radius: 27px;
         }
-
+        .file-input-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+            color: #888888;
+            pointer-events: none; /* Membuat teks tidak dapat diklik */
+        }
         .file-input {
             position: absolute;
             top: 0;
@@ -71,6 +81,7 @@
 ">
         <div class="file-input-wrapper">
             <input type="file" accept="image/*" name="new-image-button" id="new-image-button" class="file-input">
+            <span class="file-input-label">Masukan File</span>
         </div>          
           </div>
           <div style="

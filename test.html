@@ -139,7 +139,7 @@
       document.getElementById('new-image-button').addEventListener('change', function() {
             var label = document.getElementById('file-input-label');
             var input = this;
-            console.log(input);
+            console.log(input.files[0].name);
             console.log(input.files);
             if (input.files && input.files.length > 0) {
                 var fileName = input.files[0].name;

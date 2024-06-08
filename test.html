@@ -4,7 +4,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-      input[type="file2"] {
+      input[class="hp"] {
         display: none;
       }
 
@@ -73,11 +73,8 @@
     color: #24896d;
 ">Unggah <i class="fas fa-cloud-upload-alt"></i>
               </button>
-              <button type="button" class="fa fa-camera" style="
-    border-radius: 15px;
-    color: #24896d;
-" id="capture-button"></button>
-              <input type="file2" accept="image/*" capture="camera" name="new-image" id="new-image">
+              <button type="button" id="capture-button" class="fa fa-camera" style="border-radius: 15px; color: #24896d;"></button>
+              <input class="hp" type="file" accept="image/*" capture="camera" name="new-image" id="new-image">
             </div>
           </div>
         </form>
@@ -113,9 +110,9 @@
       </div>
     </div>
     <script>
-          document.getElementById('capture-button').addEventListener('click', function() {
-            document.getElementById('new-image').click();
-          });
+      document.getElementById('capture-button').addEventListener('click', function() {
+        document.getElementById('new-image').click();
+      });
     </script>
   </body>
 </html>

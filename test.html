@@ -1,5 +1,4 @@
-<html>
-  <head>
+<html><head>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -23,14 +22,56 @@
     background-repeat: no-repeat;
     background-size: cover;
 ">
-    <div style="
-    position: absolute;
-    top: 33%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-">
+    <div style="display: flex;flex-direction: column;">
       <div>
+        <div style="
+    color: #273347;
+    text-align: center;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 31px;
+">
+          <p style="
+    font-weight: bold;
+    font-size: 56px;
+    -: 1em;
+    margin-block-end: 0;
+">Deteksi Daun Anggur</p>
+          <p style="font-size: 18px;font-weight: bold;">Sebuah projek kecil yang dapat membantumu mendeteksi keadaan pohon anggur kamu</p>
+        </div>
+        <form method="post" enctype="multipart/form-data">
+          <div style="
+    padding-left: 10%;
+    padding-right: 10%;
+">
+            <div style="
+    outline: 6px inset #afefff;
+    background: #fff;
+    padding: 70px 26px;
+    border-radius: 27px;
+">
+              <input type="file" accept="image/*" capture="camera" name="new-image" id="new-image" class="up-input" style="width: 100%;height: 100%;">
+            </div>
+          </div>
+          <div style="
+    padding-left: 10%;
+    padding-right: 10%;
+">
+            <div style="
+    padding-top: 2%;
+">
+              <button type="button2" style="
+    border-radius: 15px;
+    color: #24896d;
+">Unggah <i class="fas fa-cloud-upload-alt"></i>
+              </button>
+              <button type="button" class="fa fa-camera" style="
+    border-radius: 15px;
+    color: #24896d;
+"></button>
+            </div>
+          </div>
+        </form>
+      </div><div>
         <div style="
     color: #273347;
     text-align: center;
@@ -80,5 +121,6 @@
         </form>
       </div>
     </div>
-  </body>
-</html>
+  
+
+</body></html>

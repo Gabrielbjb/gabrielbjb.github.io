@@ -142,8 +142,7 @@
             console.log(input.files[0].name);
             console.log(input.files);
             if (input.files && input.files.length > 0) {
-                var fileName = input.files[0].name;
-                label.textContent = fileName;
+                label.textContent = String(input.files[0].name);
             } else {
                 label.textContent = 'Masukan File';
             }

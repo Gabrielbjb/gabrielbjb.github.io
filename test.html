@@ -1,26 +1,46 @@
-<body onload="checkCookie()" style="
-    background-image: linear-gradient(          rgba(0, 0, 0, 0.7),           rgba(0, 0, 0, 0.7)        ),url(https://previews.123rf.com/images/thawats/thawats1302/thawats130200125/17995332-grape-garden.jpg);
-">
-  <div style="
-    padding-left: 30px;
-    padding-right: 30px;
+<html>
+  <head></head>
+  <body style="
+    background-image: url(https://www.sitepen.com/left.27pyYBXv.svg), url(https://www.sitepen.com/bg.1pDdxN2P.svg);
+    background-repeat: no-repeat;
 ">
     <div style="
-    color: white;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+">
+      <div style="
+    color: #273347;
     text-align: center;
     font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 31px;
 ">
-      <h1>Deteksi Daun Anggur</h1>
-    </div>
-    <div>
-      <div style="
-    outline: 2px dashed #555;
-    background: #333;
-    padding: 70px 26px;
-">
-        <input type="file" accept="image/*" capture="camera" name="new-image" id="new-image" class="up-input" style="display: flex;justify-content: center;">
+        <p style="
+    font-weight: bold;
+    font-size: 56px;
+    -: 1em;
+    margin-block-end: 0;
+">Deteksi Daun Anggur</p>
+        <p style="font-size: 18px;font-weight: bold;">Sebuah projek kecil yang dapat membantumu mendeteksi keadaan pohon anggur kamu</p>
       </div>
+      <form method="post" enctype="multipart/form-data">
+        <div style="
+    padding-left: 10%;
+    padding-right: 10%;
+">
+          <div style="
+    outline: 6px inset #afefff;
+    background: #fff;
+    padding: 70px 26px;
+    border-radius: 27px;
+">
+            <input type="file" accept="image/*" capture="camera" name="new-image" id="new-image" class="up-input" style="width: 100%;height: 100%;">
+          </div>
+        </div>
+      </form>
+      <div></div>
     </div>
-    <div></div>
-  </div>
-</body>
+  </body>
+</html>

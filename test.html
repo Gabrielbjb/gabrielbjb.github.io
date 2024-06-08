@@ -136,6 +136,16 @@
       document.getElementById('capture-button').addEventListener('click', function() {
         document.getElementById('new-image').click();
       });
+      document.getElementById('new-image-button').addEventListener('change', function() {
+            var label = document.getElementById('file-input-label');
+            var input = this;
+            if (input.files && input.files.length > 0) {
+                var fileName = input.files[0].name;
+                label.textContent = fileName;
+            } else {
+                label.textContent = 'Masukan File';
+            }
+      });
     </script>
   </body>
 </html>

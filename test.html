@@ -81,7 +81,7 @@
 ">
         <div class="file-input-wrapper">
             <input type="file" accept="image/*" name="new-image-button" id="new-image-button" class="file-input">
-            <span class="file-input-label" id="file-input-label">Masukan File</span>
+            <span class="file-input-label" id="file-input-label">Unggah Foto</span>
         </div>          
           </div>
           <div style="
@@ -91,13 +91,10 @@
             <div style="
     padding-top: 2%;
 ">
-              <button type="button2" style="
-    border-radius: 15px;
-    color: #24896d;
-">Unggah <i class="fas fa-cloud-upload-alt"></i>
+              <button type="button2" style="border-radius: 15px;color: #24896d;">Unggah <i class="fas fa-cloud-upload-alt"></i>
               </button>
               <button type="button" id="capture-button" class="fa fa-camera" style="border-radius: 15px; color: #24896d;"></button>
-              <input class="hp" type="file" accept="image/*" capture="camera" name="new-image" id="new-image-button">
+              <input class="hp" type="file" accept="image/*" capture="camera" name="new-image" id="new-image">
             </div>
           </div>
         </form>
@@ -144,6 +141,17 @@
             } else {
                 label.textContent = 'Masukan File';
             }
+            document.getElementById('new-image').value = "";
+      });
+      document.getElementById('new-image').addEventListener('change', function() {
+            var label = document.getElementById('file-input-label');
+            var input = this;
+            if (input.files && input.files.length > 0) {
+                label.textContent = String(input.files[0].name);
+            } else {
+                label.textContent = 'Masukan File';
+            }
+            document.getElementById('new-image-button').value = "";
       });
     </script>
   </body>

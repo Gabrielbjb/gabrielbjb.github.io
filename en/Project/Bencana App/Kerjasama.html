@@ -1,0 +1,242 @@
+<html lang="id"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerjasama | Bencana Indonesia</title>
+  <style>
+    :root {
+      --primary-color: #0099ff;
+      --text-color: #ffffff;
+      --background-color: #f0f0f0;
+      --footer-bg: #565454;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Century Gothic', sans-serif;
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: #000;
+      line-height: 1.6;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sticky-header {
+      background-color: var(--primary-color);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--text-color);
+    }
+
+    .sticky-header h1 {
+      font-size: 2em;
+      transition: 0.3s ease-in-out;
+    }
+
+    .content {
+      background-color: var(--primary-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+      color: var(--text-color);
+      text-align: center;
+    }
+
+    .content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+
+    .content p {
+      font-size: 1.2em;
+      max-width: 800px;
+    }
+
+    .data {
+      border-radius: 10px;
+      padding: 10px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .data:hover {
+      transform: scale(1.05);
+    }
+
+    .data img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      background-color: white;
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: #fff;
+      padding: 40px 24px 20px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 10px;
+      display: inline-block;
+      transition: 0.2s;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+
+    footer nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    footer nav ul li {
+      font-size: 11px;
+    }
+
+    footer img {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .sticky-header h1 {
+        font-size: 1.5em;
+      }
+
+      .content p {
+        font-size: 1em;
+        padding: 0 10px;
+      }
+
+      footer nav ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="sticky-header">
+      <h1>Satu Data Menyelamatkan Banyak Nyawa</h1>
+    </div>
+    <div class="content">
+      <img src="/en/Project/Bencana%20App/illus1.png" alt="Tampilan Aplikasi">
+      <p>
+        Bekerja dengan pemerintah? Punya kenalan di instansi terkait? Atau anda adalah petinggi lembaga? Jika betul, mari kita bekerjasama dalam menyelamatkan nyawa dengan cara berbagi data dan informasi bencana.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sticky-header">
+      <h1>Bagaimana Bisa Data Menyelamatkan Nyawa Seseorang?</h1>
+    </div>
+    <div class="content">
+      <img src="/en/Project/Bencana%20App/illus3.png" alt="Ilustrasi Data">
+      <p>
+        Dengan menyebarkan data kebencanaan kepada publik, seluruh masyarakat di Indonesia dapat mengakses informasi yang mereka butuhkan untuk melindungi diri dan keluarga mereka.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sticky-header">
+      <h1>Apa itu Bencana Indonesia?</h1>
+    </div>
+    <div class="content">
+      <img src="/en/Project/Bencana%20App/illus2.png" alt="Tentang Aplikasi">
+      <p>
+        Aplikasi Bencana Indonesia adalah aplikasi non-profit yang memberikan informasi terkini tentang bencana alam di Indonesia. Data dikumpulkan dari berbagai sumber dan disajikan secara gratis melalui perangkat Windows.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sticky-header">
+      <h1>Jenis Data yang Dibutuhkan Pengembang</h1>
+    </div>
+    <div class="content">
+      <div style="
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+          margin-bottom: 40px;
+        ">
+        <div id="geojson" class="data"><img src="/en/Project/Bencana%20App/geo.png" alt="Geo Data"></div>
+        <div id="xml" class="data"><img src="/en/Project/Bencana%20App/xml.png" alt="XML Data"></div>
+        <div id="api" class="data"><img src="/en/Project/Bencana%20App/api.png" alt="API Data"></div>
+        <div id="data" class="data"><img src="/en/Project/Bencana%20App/data.png" alt="Data"></div>
+      </div>
+      <p id="teksMuncul">Data seperti laporan kerusakan, titik evakuasi, dan statistik bencana sangat penting untuk memberikan informasi yang akurat dan terkini kepada masyarakat.</p>
+    </div>
+  </section><section>
+    <div class="sticky-header">
+      <h1>Siap Untuk Bekerjasama?</h1>
+<a href="https://discord.gg/xZkAUMvrfd" style="
+    background: white;
+    border-radius: 10px;
+    display: inline-block;
+"><img src="/en/Project/Bencana%20App/66e3d80db9971f10a9757c99_Symbol.svg" alt="BMKG Logo" style="width: 106px;height: 106;"></a>
+    </div>
+    
+  </section>
+
+  <footer>
+    <a href="#">
+      <img src="/en/Project/Bencana%20App/iconwinui3.png" alt="Logo App" style="width: 80px">
+      <span>Indonesia Disaster App</span>
+    </a>
+    <p style="font-size: 11px; max-width: 400px">
+      Indonesia Disaster App is an app that provides up-to-date information on disasters occurring across Indonesia. These include earthquakes, tsunamis, ports, waters, weather, air quality, and much more!
+    </p>
+    <nav>
+      <ul>
+        <li><a href="https://www.gabrielbjb.my.id/id/Project/Bencana App/" target="_blank">English</a></li>
+        <li><a href="https://www.gabrielbjb.my.id/id/Donasi/" target="_blank">Donation</a></li>
+        <li><a href="https://www.gabrielbjb.my.id/en/Project/Bencana%20App/Privacy.html" target="_blank">Privacy &amp; Policy</a></li>
+        <li><a href="https://discord.gg/xZkAUMvrfd" target="_blank">Contact</a></li>
+        <li>© Gabrielbjb</li>
+      </ul>
+    </nav>
+  </footer>
+  <script>
+    // untuk menampilkan tulisan pada saat menekan id dari data
+    const teksMuncul = document.getElementById('teksMuncul');
+    document.getElementById('geojson').addEventListener('click', function() {
+      teksMuncul.innerText = 'Data GeoJSON sangat penting untuk memetakan lokasi bencana yang dimana akan digunakan dalam menampilkan peta di dalam aplikasi. Seperti wilayah banjir, tanah longsor, dan daerah rawan gempa, dan masih banyak lagi.';
+    });
+    document.getElementById('xml').addEventListener('click', function() {
+      teksMuncul.innerText = 'Data XML digunakan untuk memberikan informasi bencana secara real-time seperti lokasi, waktu, jenis bencana bahkan pengumuman bencana.';
+    });
+    document.getElementById('api').addEventListener('click', function() {
+      teksMuncul.innerText = 'Data API memungkinkan akses data bencana secara real-time seperti lokasi, waktu, jenis bencana bahkan pengumuman bencana.';
+    });
+    document.getElementById('data').addEventListener('click', function() {
+      teksMuncul.innerText = 'Data seperti laporan kerusakan, titik evakuasi, dan statistik bencana sangat penting untuk memberikan informasi yang akurat dan terkini kepada masyarakat.';
+    });
+  </script>
+
+
+</body></html>

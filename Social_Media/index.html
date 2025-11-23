@@ -1,0 +1,196 @@
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000924">
+    <link rel="icon" type="image/x-icon" href="/Assets/AssetsHomePage/Images/Sparkles.gif">
+    <title id="Title"></title>
+    <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/NavBar.css">
+    <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/WindowMessage.css">
+    <link rel="stylesheet" href="/Assets/AssetsHomePage/CSS/StarsBackground.css">
+    <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/NormalTheme.css">
+    <style>
+      .wrapProgrammer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .buttonSVG {
+        margin: 10px;
+        padding: 10px;
+        background-color: var(--background-main);
+        border-radius: var(--border-radius);
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+      }
+
+      .buttonSVG:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      .buttonSVG.active {
+        background-color: rgba(255, 255, 145, 0.3);
+      }
+
+      .buttonSVG img {
+        width: 70px;
+      }
+
+      .slider-wrapper {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .slider-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .slider-container::-webkit-scrollbar {
+        display: none;
+      }
+
+      .slide {
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        padding: 20px;
+        width: 100%;
+      }
+
+      .box {
+        height: 200px;
+        border-radius: 10px;
+        font-size: 2em;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: space-between;
+        align-items: flex-start;
+        transform: none;
+        transition: transform 0.3s;
+      }
+
+
+      @media (max-width: 960px) {
+        .wrapProgrammer {
+          flex-direction: column !important;
+        }
+
+        .wrapProgrammer>div {
+          width: 100% !important;
+        }
+
+        .padding-screen {
+          padding: 0px !important;
+          transition: padding 1s;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <section id="star-section"></section>
+    <header id="navbar" style="position: absolute;">
+      <nav class="footer-position nav-position nav-position-top">
+        <div id="identity" class="">Gabrielbjb</div>
+        <ul class="nav-links">
+          <li>
+            <a id="Home" href="/"></a>
+          </li>
+          <li>
+            <a id="DonationNav" href="/Donation"></a>
+          </li>
+          <li>
+            <a id="ProjectsNav" href="/Projects"></a>
+          </li>
+          <li>
+            <a style="cursor: pointer;" id="SettingsNav"></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="padding-screen">
+      <div class="overlay">
+        <div class="wrapDiv wrapProgrammer">
+          <div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#ffd700">
+                <path d="M260-100v-760 760Zm440 0v-120 120ZM580-340h240v-160H580v160Zm-60 140v-330q0-12.75 8.63-21.38Q537.25-560 550-560h300q12.75 0 21.38 8.62Q880-542.75 880-530v220q0 12.75-8.62 21.37Q862.75-280 850-280H600l-80 80ZM260-40q-24.75 0-42.37-17.63Q200-75.25 200-100v-760q0-24.75 17.63-42.38Q235.25-920 260-920h440q24.75 0 42.38 17.62Q760-884.75 760-860v200h-60v-200H260v760h440v-80h60v80q0 25-17.62 42.5Q724.75-40 700-40H260Zm219-680q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm101 380v-160 160Z"/>
+              </svg>
+              <div class="custom-select-wrapper">
+                <h1 id="SocialMedia"></h1>
+              </div>
+              <p id="SocialMediaMessage"></p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; justify-content: center; display: flex; align-items: center;">
+            <div style="display: flex ; flex-wrap: wrap; flex-direction: row; justify-content: center; transition: flex-direction 0.3s; ">
+              <a href="http://discord.com/users/456315423030378506" target="_blank" onclick="alert('Usernme: Gabrielbjb \nID: 456315423030378506 \nTag: Gabrielbjb#1234')">
+                <div class="buttonSVG">
+                  <img src="/Assets/AssetsHomePage/Images/dc.svg" alt="discord">
+                </div>
+              </a>
+              <a href="https://www.instagram.com/gabrielbjbs/" target="_blank">
+                <div class="buttonSVG">
+                  <img src="/Assets/AssetsHomePage/Images/instagram.svg" alt="instagram">
+                </div>
+              </a>
+              <a href="https://github.com/gabrielbjb" target="_blank">
+                <div class="buttonSVG">
+                  <img src="/Assets/AssetsIcon/github.svg" alt="github">
+                </div>
+              </a>
+              <a href="mailto:gabrielbjb82@gmail.com" target="_blank" onclick="alert('Email: gabrielbjb82@gmail.com')">
+                <div class="buttonSVG">
+                  <img src="/Assets/AssetsIcon/mail.svg" alt="email">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <footer class="footerBottom">
+      <a class="footer-position">
+        <img src="/Assets/AssetsHomePage/Images/Sparkles.gif" style=" width: 80px;">
+        <span style="padding-left: 10px; ">Gabrielbjb</span>
+      </a>
+      <div style="max-width: 388px;">
+        <a id="FooterMessage" style="line-height: 16px; margin: 3px 0; font-weight: initial; "></a>
+      </div>
+      <nav class="nav-position navbottom-position-phone">
+        <ul class="nav-links nav-links-position-phone">
+          <li>
+            <a id="PrivacyNav" href="/Privacy_Policy"></a>
+          </li>
+          <li>
+            <a id="SosmedNav" class="active"></a>
+          </li>
+          <li>© Gabrielbjb</li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="/Assets/AssetsGlobal/JavaScripts/NavBar.js"></script>
+    <script src="/Assets/AssetsGlobal/JavaScripts/WindowMessage.js"></script>
+    <script src="/Assets/AssetsGlobal/JavaScripts/LoadLanguage.js"></script>
+    <script src="/Assets/AssetsGlobal/JavaScripts/ForCookie.js"></script>
+    <script src="/Assets/AssetsHomePage/JavaScripts/StarsBackground.js"></script>
+    <script src="/Assets/AssetsHomePage/JavaScripts/ForSettings.js"></script>
+    <script>
+      function LanguageFunc() {
+        CallLanguage(["./SocialMediaLanguage.json", "/Assets/AssetsGlobal/JSON/NavBarLanguage.json"]);
+      }
+      LanguageFunc();
+    </script>
+  </body>
+</html>

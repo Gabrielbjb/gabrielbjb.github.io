@@ -1,0 +1,24 @@
+{
+    "0":
+    {
+        "Welcome": "Selamat Datang",
+        "WelcomeMessage": "Halo! Saya Gabriel, seorang developer IT asal Indonesia yang memiliki semangat tinggi dalam membangun solusi digital. Saya senang mengubah ide menjadi aplikasi atau website yang bermanfaat dan fungsional.",
+        "Experience": "Pengalaman",
+        "ExperienceMessage": "Berikut merupakan informasi mengenai pengalaman saya di bidang teknologi, mencakup berbagai bahasa pemograman, teknologi, dan lainnya.",
+        "Projects": "Proyek",
+        "ProjectsMessage": "Berikut merupakan informasi mengenai proyek yang telah saya kerjakan.",
+        "Title": "Gabrielbjb - Portofolio",
+        "MoreProject": "Proyek Lainnya"
+    },
+    "1":
+    {
+        "Welcome": "Welcome",
+        "WelcomeMessage": "Hello! I'm Gabriel, an IT developer from Indonesia with a strong passion for exploring the digital world. I enjoy turning ideas into useful and functional applications or websites.",
+        "Experience": "Experience",
+        "ExperienceMessage": "Here is some information about my experience in the field of technology, covering various programming languages, technologies, and more.",
+        "Projects": "Projects",
+        "ProjectsMessage": "Here is some information about the projects I have worked on.",
+        "Title": "Gabrielbjb - Portfolio",
+        "MoreProject": "More Projects"
+    }
+}

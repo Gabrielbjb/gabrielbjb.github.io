@@ -1,0 +1,26 @@
+{
+    "0": 
+    {
+        "FooterMessage": "Situs ini merupakan portofolio resmi Gabrielbjb. Menampilkan proyek-proyek, karya, dan informasi lainnya.",
+        "PrivacyPolicy": "Privasi & Kebijakan",
+        "Contact": "Kontak",
+        "Home": "Beranda",
+        "DonationNav": "Donasi",
+        "SettingsNav": "Pengaturan",
+        "ProjectsNav": "Proyek",
+        "PrivacyNav": "Privasi",
+        "SosmedNav": "Media Sosial"
+    },
+    "1": 
+    {
+        "FooterMessage": "This site is the official portfolio of Gabrielbjb. Showcasing projects, works, and other information.",
+        "PrivacyPolicy": "Privacy & Policy",
+        "Contact": "Contact",
+        "Home": "Home",
+        "DonationNav": "Donation",
+        "SettingsNav": "Settings",
+        "ProjectsNav": "Projects",
+        "PrivacyNav": "Privacy",
+        "SosmedNav": "Social Media"
+    }
+}

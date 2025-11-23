@@ -1,0 +1,129 @@
+section {
+	background: #000924;
+}
+
+:root {
+	--background-main: rgba(255, 255, 255, 0.1);
+	--blur-main: blur(4px);
+	--border-radius: 10px;
+}
+
+::selection {
+	color: #000924;
+	background: gold;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #000924;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: #000924;
+}
+
+::-webkit-scrollbar-track {
+	background: #1a223a;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(253, 215, 0, 0.807);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: gold;
+}
+
+.overlay {
+	position: relative;
+	z-index: 2;
+	color: white;
+	text-align: center;
+	padding: 50px;
+	background-color: var(--background-main);
+	backdrop-filter: var(--blur-main);
+	border-radius: var(--border-radius);
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	transition: background-color 2s, backdrop-filter 2s, padding 2s !important;
+}
+
+.overlay h1 {
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+.overlay p {
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+
+.overlay button {
+	padding: 10px 20px;
+	font-size: 1em;
+	background-color: yellow;
+	color: #000924;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.overlay button:hover {
+	background-color: gold;
+}
+
+@media (max-width: 960px) {
+	section {
+		padding: 0px !important;
+		transition: padding 1s;
+	}
+	.overlay {
+		background-color: transparent !important;
+		backdrop-filter: none !important;
+		transition: background-color 2s, backdrop-filter 2s, padding 2s !important;
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.padding-screen {
+		padding: 0px !important;
+		transition: padding 1s;
+	}
+}
+.padding-screen{
+    padding: 100px;
+    transition: padding 1s;
+}
+.wrapDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttonLink{
+	text-decoration: none;
+    color: white;
+    background-color: rgba(183, 183, 183, 0.08);
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.buttonLink:hover{
+	background-color: rgba(183, 183, 183, 0.2);
+	transition: all 0.3s;
+}

@@ -1,0 +1,173 @@
+{
+    "HomePage": {
+        "Title": ["Aplikasi Bencana Indonesia", "Indonesia Disaster App"],
+        "Description": [
+            "Aplikasi Bencana Indonesia adalah aplikasi yang menyediakan informasi terkini mengenai bencana yang terjadi di seluruh wilayah Indonesia. Seperti Gempa bumi, Tsunami, Pelabuhan, Perairan, Cuaca, Kualitas Udara, Dan masih banyak lagi!",
+            "Indonesia Disaster App is an application that provides up-to-date information about disasters occurring throughout Indonesia. Such as Earthquakes, Tsunamis, Ports, Waters, Weather, Air Quality, And much more!"
+        ],
+        "Links":"",
+        "images": {
+            "0": {
+                "10": ["Cuaca/Cuaca/10/11.png", "Cuaca/Cuaca/10/22.png", "Cuaca/Kualitas Udara/10/11.png", "Cuaca/Kualitas Udara/10/22.png", "Cuaca/Peringatan/10/11.png", "Cuaca/Peringatan/10/22.png", "Gempa/Gempa/10/11.png", "Gempa/Gempa/10/22.png", "Gempa/Gempa/10/31.png", "Gempa/Tsunami/10/12.png", "Gempa/Tsunami/10/21.png", "Maritim/Pelabuhan/10/12.png", "Maritim/Pelabuhan/10/21.png", "Maritim/Perairan/10/12.png", "Maritim/Perairan/10/21.png"],
+                "11": ["Cuaca/Cuaca/11/11.png", "Cuaca/Cuaca/11/22.png", "Cuaca/Kualitas Udara/11/11.png", "Cuaca/Kualitas Udara/11/22.png", "Cuaca/Peringatan/11/11.png", "Cuaca/Peringatan/11/22.png", "Gempa/Gempa/11/11.png", "Gempa/Gempa/11/22.png", "Gempa/Gempa/11/32.png", "Gempa/Tsunami/11/12.png", "Gempa/Tsunami/11/21.png", "Maritim/Pelabuhan/11/12.png", "Maritim/Pelabuhan/11/21.png", "Maritim/Perairan/11/12.png", "Maritim/Perairan/11/21.png"]
+            },
+            "1": {
+                "10": ["Cuaca/Cuaca/10/12.png", "Cuaca/Cuaca/10/21.png", "Cuaca/Kualitas Udara/10/12.png", "Cuaca/Kualitas Udara/10/21.png", "Cuaca/Peringatan/10/12.png", "Cuaca/Peringatan/10/21.png", "Gempa/Gempa/10/12.png", "Gempa/Gempa/10/21.png", "Gempa/Gempa/10/32.png", "Gempa/Tsunami/10/11.png", "Gempa/Tsunami/10/22.png", "Maritim/Pelabuhan/10/11.png", "Maritim/Pelabuhan/10/22.png", "Maritim/Perairan/10/11.png", "Maritim/Perairan/10/22.png"],
+                "11": ["Cuaca/Cuaca/11/12.png", "Cuaca/Cuaca/11/21.png", "Cuaca/Kualitas Udara/11/12.png", "Cuaca/Kualitas Udara/11/21.png", "Cuaca/Peringatan/11/12.png", "Cuaca/Peringatan/11/21.png", "Gempa/Gempa/11/12.png", "Gempa/Gempa/11/21.png", "Gempa/Gempa/11/32.png", "Gempa/Tsunami/11/11.png", "Gempa/Tsunami/11/22.png", "Maritim/Pelabuhan/11/11.png", "Maritim/Pelabuhan/11/22.png", "Maritim/Perairan/11/11.png", "Maritim/Perairan/11/22.png"] 
+            }
+        }
+    },
+    "Earthquake": {
+        "Title": ["Temukan Gempa Bumi", "Find Earthquakes"],
+        "Description": [
+            "Dapatkan informasi terkini tentang gempa bumi di Indonesia, termasuk lokasi, magnitudo, kedalaman, dan waktu kejadian.",
+            "Get the latest information about earthquakes in Indonesia, including location, magnitude, depth, and time of occurrence."
+        ],
+        "images": {
+            "0": {
+                "10": ["Gempa/Gempa/10/11.png", "Gempa/Gempa/10/22.png", "Gempa/Gempa/10/32.png"],
+                "11": ["Gempa/Gempa/11/11.png", "Gempa/Gempa/11/22.png", "Gempa/Gempa/11/32.png"]
+            },
+            "1": {
+                "10": ["Gempa/Gempa/10/12.png", "Gempa/Gempa/10/21.png", "Gempa/Gempa/10/31.png"],
+                "11": ["Gempa/Gempa/11/12.png", "Gempa/Gempa/11/21.png", "Gempa/Gempa/11/31.png"]
+            }
+        }
+    },
+    "Tsunami": {
+        "Title": ["Peringatan Dini Tsunami", "Tsunami Early Warning"],
+        "Description": [
+            "Informasi Tsunami real-time yang memberikan peringatan dini kepada pengguna tentang potensi tsunami di wilayah pesisir Indonesia. Dengan data dari BMKG, aplikasi ini membantu Anda tetap waspada dan siap menghadapi situasi darurat.",
+            "This application provides real-time tsunami information that gives early warnings to users about potential tsunamis in coastal areas of Indonesia. With data from BMKG, this application helps you stay alert and prepared for emergency situations."
+        ],
+        "images": {
+            "0" : {
+                "10": ["Gempa/Tsunami/10/12.png", "Gempa/Tsunami/10/21.png"],
+                "11": ["Gempa/Tsunami/11/12.png", "Gempa/Tsunami/11/21.png"]
+            },
+            "1" : {
+                "10": ["Gempa/Tsunami/10/11.png", "Gempa/Tsunami/10/22.png"],
+                "11": ["Gempa/Tsunami/11/11.png", "Gempa/Tsunami/11/22.png"]
+            }
+        }
+    },
+    "Weather": {
+        "Title": ["Pantauan Cuaca", "Weather Monitoring"],
+        "Description": [
+            "Dapatkan informasi terkini tentang cuaca di seluruh Indonesia, termasuk prakiraan cuaca, suhu, kelembapan, dan kondisi ekstrem. ",
+            "Get the latest information about weather across Indonesia, including weather forecasts, temperature, humidity, and extreme conditions."
+        ],
+        "images": {
+            "0" : {
+                "10": ["Cuaca/Cuaca/10/11.png", "Cuaca/Cuaca/10/22.png"],
+                "11": ["Cuaca/Cuaca/11/11.png", "Cuaca/Cuaca/11/22.png"]
+            },
+            "1" : {
+                "10": ["Cuaca/Cuaca/10/12.png", "Cuaca/Cuaca/10/21.png"],
+                "11": ["Cuaca/Cuaca/11/12.png", "Cuaca/Cuaca/11/21.png"]
+            }
+        }
+    },
+    "AirQuality": {
+        "Title": ["Kualitas Udara", "Air Quality"],
+        "Description": [
+            "Dapatkan informasi terkini tentang kualitas udara di seluruh Indonesia, termasuk tingkat polusi, suhu, dan kelembapan yang diperoleh dari berbagai sumber terpercaya Kementerian Lingkungan Hidup.",
+            "Get the latest information about air quality across Indonesia, including pollution levels, temperature, and humidity obtained from various trusted sources from the Ministry of Environment."
+        ],
+        "images": {
+            "0" : {
+                "10": ["Cuaca/Kualitas Udara/10/11.png", "Cuaca/Kualitas Udara/10/22.png"],
+                "11": ["Cuaca/Kualitas Udara/11/11.png", "Cuaca/Kualitas Udara/11/22.png"]
+            },
+            "1" : {
+                "10": ["Cuaca/Kualitas Udara/10/12.png", "Cuaca/Kualitas Udara/10/21.png"],
+                "11": ["Cuaca/Kualitas Udara/11/12.png", "Cuaca/Kualitas Udara/11/21.png"]
+            }
+        }
+    },
+    "Nowcast": {
+        "Title": ["Peringatan Dini Cuaca Ekstrem", "Extreme Weather Nowcasting"],
+        "Description": [
+            "Informasi cuaca ekstrem real-time yang memberikan peringatan dini kepada pengguna tentang potensi cuaca buruk di wilayah Indonesia. Dengan data dari BMKG, aplikasi ini membantu Anda tetap waspada dan siap menghadapi situasi darurat.",
+            "Real-time extreme weather information that provides early warnings to users about potential severe weather in Indonesian regions. With data from BMKG, this application helps you stay alert and prepared for emergency situations."
+        ],
+        "images": {
+            "0" : {
+                "10": ["Cuaca/Peringatan/10/11.png", "Cuaca/Peringatan/10/22.png"],
+                "11": ["Cuaca/Peringatan/11/11.png", "Cuaca/Peringatan/11/22.png"]
+            },
+            "1" : {
+                "10": ["Cuaca/Peringatan/10/12.png", "Cuaca/Peringatan/10/21.png"],
+                "11": ["Cuaca/Peringatan/11/12.png", "Cuaca/Peringatan/11/21.png"]
+            }
+        }
+    },
+    "Cyclone": {
+        "Title": ["Siklon Tropis", "Tropical Cyclone"],
+        "Description": [
+            "Dapatkan informasi terkini tentang siklon tropis yang mempengaruhi wilayah Indonesia, termasuk jalur pergerakan, kecepatan angin, dan potensi dampak. Aplikasi ini membantu Anda memantau kondisi cuaca ekstrem dengan lebih baik.",
+            "Get the latest information about tropical cyclones affecting Indonesian regions, including movement paths, wind speeds, and potential impacts. This application helps you better monitor extreme weather conditions."
+        ],
+        "images": {
+            "0" : {
+                "10": ["Cuaca/Cyclone/10/12.png", "Cuaca/Cyclone/10/22.png"],
+                "11": ["Cuaca/Cyclone/11/12.png", "Cuaca/Cyclone/11/22.png"]
+            },
+            "1" : {
+                "10": ["Cuaca/Cyclone/10/11.png", "Cuaca/Cyclone/10/21.png"],
+                "11": ["Cuaca/Cyclone/11/11.png", "Cuaca/Cyclone/11/21.png"]
+            }
+        }
+    },
+    "WaterInfo" : {
+        "Title": ["Informasi Perairan", "Harbor Waters Information"],
+        "Description": [
+            "Dapatkan informasi terkini tentang kondisi perairan di seluruh Indonesia, termasuk kecepatan angin, gelombang, arus laut, dan masih banyak lagi.",
+            "This application provides important information about water conditions in Indonesian waters, including wind speeds, waves, currents, and much more."
+        ],
+        "images": {
+            "0" : {
+                "10": ["Maritim/Perairan/10/12.png", "Maritim/Perairan/10/21.png"],
+                "11": ["Maritim/Perairan/11/12.png", "Maritim/Perairan/11/21.png"]
+            },
+            "1" : {
+                "10": ["Maritim/Perairan/10/11.png", "Maritim/Perairan/10/22.png"],
+                "11": ["Maritim/Perairan/11/11.png", "Maritim/Perairan/11/22.png"]
+            }
+        }
+    },
+    "HarborInfo": {
+        "Title": ["Informasi Pelabuhan", "Harbor Information"],
+        "Description": [
+            "Dapatkan informasi terkini tentang kondisi pelabuhan di seluruh Indonesia, termasuk kecepatan angin, gelombang, arus laut, dan masih banyak lagi.",
+            "This application provides important information about harbor conditions in Indonesian waters, including wind speeds, waves, currents, and much more."
+        ],
+        "images": {
+            "0" : {
+                "10": ["Maritim/Pelabuhan/10/12.png", "Maritim/Pelabuhan/10/21.png"],
+                "11": ["Maritim/Pelabuhan/11/12.png", "Maritim/Pelabuhan/11/21.png"]
+            },
+            "1" : {
+                "10": ["Maritim/Pelabuhan/10/11.png", "Maritim/Pelabuhan/10/22.png"],
+                "11": ["Maritim/Pelabuhan/11/11.png", "Maritim/Pelabuhan/11/22.png"]
+            }
+        }
+    },
+    "HelpInfo": {
+        "Title": ["Kontak Darurat", "Emergency Contacts"],
+        "Description": [
+            "Butuh bantuan selama bencana? Aplikasi ini menyediakan informasi dan memandu cara melakukan kontak dengan panggilan darurat, dan sumber daya penting lainnya untuk membantu Anda mendapatkan bantuan yang Anda butuhkan.",
+            "Need help during a disaster? This application provides information and guides on how to contact emergency calls, and other important resources to help you get the assistance you need."
+        ],
+        "images": {
+            "0": {
+                "10": ["/Disaster Relief/10/11.png", "/Disaster Relief/10/12.png"],
+                "11": ["/Disaster Relief/11/11.png", "/Disaster Relief/11/12.png"]
+            },
+            "1": {
+                "10": ["/Disaster Relief/10/21.png", "/Disaster Relief/10/22.png"],
+                "11": ["/Disaster Relief/11/21.png", "/Disaster Relief/11/22.png"]
+            }
+        }
+    }
+}

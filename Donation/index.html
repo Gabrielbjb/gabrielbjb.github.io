@@ -1,0 +1,90 @@
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#000924">
+        <link rel="icon" type="image/x-icon" href="https://em-content.zobj.net/source/animated-noto-color-emoji/427/sparkles_2728.gif">
+        <title id="Title"></title>
+        <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/NavBar.css">
+        <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/WindowMessage.css">
+        <link rel="stylesheet" href="/Assets/AssetsHomePage/CSS/StarsBackground.css">
+        <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/NormalTheme.css">
+        <style>
+            .qrisImage{
+                width: 50% ;
+                transition: width 0.3s;
+            }
+            @media (max-width: 620px) {
+                .qrisImage:hover{
+                    width: 70% !important;
+                    transition: width 0.3s;
+                }
+            }
+        </style>
+    </head>
+  <body>
+    <section id="star-section"> </section>
+    <header id="navbar" style="position: absolute;">
+      <nav class="footer-position nav-position nav-position-top">
+        <div id="identity" class="">Gabrielbjb</div>
+        <ul class="nav-links">
+          <li>
+            <a id="Home" href="/"></a>
+          </li>
+          <li>
+            <a id="DonationNav" href="/Donation"></a>
+          </li>
+          <li>
+            <a id="ProjectsNav" href="/Projects"></a>
+          </li>
+          <li>
+            <a style="cursor: pointer;" id="SettingsNav"></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="padding-screen">
+      <div class="overlay">
+        <div style="display: flex ; flex-direction: column; flex-wrap: nowrap; align-items: center; gap: 1.5rem;">
+          <p id="Description"></p>
+          <img src="qris.svg">
+          <img src="qrisGabrielbjb.png" class="qrisImage" alt="QRIS Gabrielbjb">
+          <a class="buttonLink" href="qrisGabrielbjb.png" style="width: 100px;" download="QRIS Gabrielbjb" id="download"></a>
+          <p id="Warning" style="color:red;"></p>
+        </div>
+      </div>
+    </div>
+    <footer class="footerBottom">
+      <a class="footer-position">
+        <img src="https://em-content.zobj.net/source/animated-noto-color-emoji/427/sparkles_2728.gif" style=" width: 80px;">
+        <span style="padding-left: 10px; ">Gabrielbjb</span>
+      </a>
+      <div style="max-width: 388px;">
+        <a id="FooterMessage" style="line-height: 16px; margin: 3px 0; font-weight: initial; ">Situs ini merupakan portofolio resmi Gabrielbjb. Menampilkan proyek-proyek, karya, dan informasi lainnya.</a>
+      </div>
+      <nav class="nav-position navbottom-position-phone">
+        <ul class="nav-links nav-links-position-phone">
+          <li>
+            <a id="PrivacyNav" href="/Privacy_Policy"></a>
+          </li>
+          <li>
+            <a href="/Social_Media/" id="SosmedNav"></a>
+          </li>
+          <li>© Gabrielbjb</li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="/Assets/AssetsGlobal/JavaScripts/NavBar.js"></script>
+    <script src="/Assets/AssetsGlobal/JavaScripts/WindowMessage.js"></script>
+    <script src="/Assets/AssetsGlobal/JavaScripts/LoadLanguage.js"></script>
+    <script src="/Assets/AssetsGlobal/JavaScripts/ForCookie.js"></script>
+    <script src="/Assets/AssetsHomePage/JavaScripts/StarsBackground.js"></script>
+    <script src="/Assets/AssetsHomePage/JavaScripts/ForSettings.js"></script>
+    <script>
+      function LanguageFunc() {
+        CallLanguage(["DonationLanguage.json","/Assets/AssetsGlobal/JSON/NavBarLanguage.json"]);
+      }
+      LanguageFunc();
+    </script>
+    </body>
+</html>

@@ -1,0 +1,186 @@
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000924">
+    <link rel="icon" type="image/x-icon" href="https://em-content.zobj.net/source/animated-noto-color-emoji/427/sparkles_2728.gif">
+    <title id="Title"></title>
+    <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/NavBar.css">
+    <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/WindowMessage.css">
+    <link rel="stylesheet" href="/Assets/AssetsHomePage/CSS/StarsBackground.css">
+    <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/NormalTheme.css">
+    <style>
+      .wrapProject {
+        flex-direction: column;
+      }
+
+      .slider-wrapper {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .slider-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .slide {
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        padding: 20px;
+        width: 100%;
+        transform: translateZ(0);
+        transition: all 0.3s;
+      }
+      .slide:hover {
+        transform: scale(1.05);
+        
+        transition: all 0.3s;
+      }
+      .slide:hover .descriptionbox {
+        height: 340px;
+        transition: all 0.3s;
+      }
+      .descriptionbox {
+        height: 260px;
+        background-color: #00092487;
+        padding: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 0.3s;
+      }
+
+      .description {
+        color: white;
+        font-size: 13px !important;
+        height: 35px;
+        text-align: left;
+        overflow: clip;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        position: relative;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        margin-bottom: 4px;
+        transition: all 0.3s;
+      }
+      .slide:hover .description{
+        height: 95px ;
+        -webkit-line-clamp: none;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+        mask-image: linear-gradient(to bottom, rgb(0 0 0), rgb(0 0 0));
+        -webkit-box-orient: unset;
+        transition: all 0.3s;
+      }
+
+      @media (min-width: 600px) {
+        .slide {
+          min-width: 50%;
+          width: 0px;
+        }
+      }
+
+      @media (min-width: 900px) {
+        .slide {
+          width: 33.3333%;
+          min-width: auto;
+        }
+      }
+
+      @media (max-width: 960px) {
+        .padding-screen {
+          padding: 0px !important;
+          transition: padding 1s;
+        }
+        .descriptionbox {
+            background-color: #1a223a85;
+            backdrop-filter: blur(4px);
+            transition: all 0.3s;
+        }
+        .overlay {
+          display: unset;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="star-section"></section>
+    <header id="navbar" style="position: absolute;">
+      <nav class="footer-position nav-position nav-position-top">
+        <div id="identity" class="">Gabrielbjb</div>
+        <ul class="nav-links">
+          <li>
+            <a id="Home" href="/"></a>
+          </li>
+          <li>
+            <a id="DonationNav" href="/Donation"></a>
+          </li>
+          <li>
+            <a id="ProjectsNav" class="active"></a>
+          </li>
+          <li>
+            <a style="cursor: pointer;" id="SettingsNav"></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="padding-screen">
+      <div class="overlay">
+        <div class="wrapDiv wrapProject">
+          <div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="70px" fill="gold">
+                <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm80-80h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm200-190q13 0 21.5-8.5T510-820q0-13-8.5-21.5T480-850q-13 0-21.5 8.5T450-820q0 13 8.5 21.5T480-790ZM200-200v-560 560Z"></path>
+              </svg>
+              <h1 id="Projects"></h1>
+              <p id="ProjectsMessage"></p>
+            </div>
+          </div>
+          <div>
+            <div class="slider-wrapper">
+              <div class="slider-container" id="slider">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footerBottom">
+      <a class="footer-position">
+        <img src="https://em-content.zobj.net/source/animated-noto-color-emoji/427/sparkles_2728.gif" style=" width: 80px;">
+        <span style="padding-left: 10px; ">Gabrielbjb</span>
+      </a>
+      <div style="max-width: 388px;">
+        <a id="FooterMessage" style="line-height: 16px; margin: 3px 0; font-weight: initial; ">Situs ini merupakan portofolio resmi Gabrielbjb. Menampilkan proyek-proyek, karya, dan informasi lainnya.</a>
+      </div>
+      <nav class="nav-position navbottom-position-phone">
+        <ul class="nav-links nav-links-position-phone">
+          <li>
+            <a id="PrivacyNav" href="/Privacy_Policy"></a>
+          </li>
+          <li>
+            <a href="/Social_Media/" id="SosmedNav"></a>
+          </li>
+          <li>© Gabrielbjb</li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="/Assets/AssetsGlobal/JavaScripts/NavBar.js"></script>
+    <script src="/Assets/AssetsGlobal/JavaScripts/WindowMessage.js"></script>
+    <script src="/Assets/AssetsGlobal/JavaScripts/LoadLanguage.js"></script>
+    <script src="/Assets/AssetsGlobal/JavaScripts/ForCookie.js"></script>
+    <script src="/Assets/AssetsHomePage/JavaScripts/StarsBackground.js"></script>
+    <script src="/Assets/AssetsHomePage/JavaScripts/ForSettings.js"></script>
+    <script src="./JavaScript/ListOfSlider.js"></script>
+    <script>
+      function LanguageFunc() {
+        CallLanguage(["/Assets/AssetsHomePage/JSON/HomePageLanguage.json", "/Assets/AssetsGlobal/JSON/NavBarLanguage.json"]);
+      }
+      LanguageFunc();
+    </script>
+  </body>
+</html>

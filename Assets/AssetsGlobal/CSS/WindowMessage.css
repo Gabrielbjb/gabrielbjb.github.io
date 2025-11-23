@@ -1,0 +1,83 @@
+.messageButtom-Background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    transition: background-color 0.3s;
+}
+.messageButtom-Window{
+    background-color: #1a223a;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    padding: 33px;
+    color: white;
+    transform: translateY(0%);
+    transition: transform 0.3s;
+}
+.messageButtom-Window p{
+    margin-bottom: 15px;
+}
+
+.messageButtom-Window div:nth-child(1){
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.messageButtom-Window button{
+    background-color: #ffffff;
+    font-size: 16px;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    border-radius: 10px;
+    width: 120px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.messageButtom-Window button:hover{
+    background-color: gold;
+    transition: background-color 0.3s;
+}
+.messageButtom-Window select{
+    background-color: #ffffff;
+    font-size: 16px;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    border-radius: 10px;
+    width: 191px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.messageButtom-Window select:hover{
+    background-color: gold;
+    transition: background-color 0.3s;
+
+}
+.messageButtom-Window.gone{
+    background-color: #1a223a;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    padding: 33px;
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+@media (max-width: 480px) {
+  .messageButtom-Window div {
+    flex-direction: column;
+  }
+}

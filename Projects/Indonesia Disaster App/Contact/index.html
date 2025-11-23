@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000924" id="theme-color-meta">
+  <link rel="icon" type="image/x-icon" href="https://em-content.zobj.net/source/animated-noto-color-emoji/427/sparkles_2728.gif">
+  <title>Hubungi - Aplikasi Bencana Indonesia</title>
+  <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/NavBar.css">
+  <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/WindowMessage.css">
+  <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/NormalTheme.css">
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body.light-mode {
+    --backgroundColor: #0099ff;
+    transition: background-color 0.3s;
+  }
+  .active{
+    color: rgb(0 93 134) !important;
+  }
+  body.dark-mode {
+    --backgroundColor: #272727;
+    transition: background-color 0.3s;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    color: white;
+    background-color: var(--backgroundColor);
+  }
+
+  .nav-links a:hover{
+    color: rgb(0 93 134) !important;
+  }
+
+  section {
+    background: unset !important;
+  }
+
+  header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+  .hidden { display: none; }
+  .wrapper ul, .wrapper ol {
+    padding: revert;
+  }
+
+  .wrapper {
+    font-family: sans-serif; 
+    padding: 3%; 
+    line-height: 1.6; 
+  }
+ */
+</style>
+
+</head>
+
+<body>
+  <header id="navbar" class="sticky">
+    <nav class="footer-position nav-position nav-position-top">
+      <p3 id="identity" class="invisibleIdentity">Indonesia Disaster App</p3>
+      <ul class="nav-links">
+        <li><a href="/Projects/Indonesia%20Disaster%20App" id="BerandaNav"></a></li>
+        <li><a href="#Tsunami" id="BantuanNav"></a></li>
+        <li><a href="#" class="active" id="HubungiNav"></a></li>
+        <li><a style="cursor: pointer;" id="SettingsNav"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-bottom: 50px; padding-top: 50px;">
+        <img src="https://www.gabrielbjb.my.id/en/Project/Bencana%20App/iconwinui3.png" style="width: 20%; filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.4));">
+        <h1 style="padding-left: 10px; text-align: center;" id="ContactTitle"></h1>
+    </div>
+    <div id="lang-id" style="text-align: center;">
+      <p id="ContactDescription"></p>
+      <div style="margin-top: 22px;display: flex;flex-direction: row;justify-content: center;align-items: center;flex-wrap: wrap;gap: 18px;">
+              <a href="https://discord.com/invite/xZkAUMvrfd" style="text-decoration: none;list-style: none;">
+                <div style="width: 100px;height: 100px;background-color: rgb(0 0 0 / 43%);backdrop-filter: blur(4px);box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);border-radius: 10px;align-items: center;display: flex;flex-direction: column;justify-content: center;gap: 10px;">
+                  <img src="/Assets/IDA/Images/Icons/dc.svg" style="width: 35px; vertical-align: middle; " alt="Logo BNPB">
+                  <p style="color: white;">Discord</p>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/gabrielbjbs/" target="_blank" style="text-decoration: none;list-style: none;">
+                <div style="width: 100px;height: 100px;background-color: rgb(0 0 0 / 43%);backdrop-filter: blur(4px);box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);border-radius: 10px;align-items: center;display: flex;flex-direction: column;justify-content: center;gap: 10px;">
+                  <img src="/Assets/IDA/Images/Icons/instagram.svg" style="width: 35px; vertical-align: middle; " alt="Logo BNPB">
+                  <p style="color: white;">Instagram</p>
+                </div>
+              </a>
+            </div>
+    </div>
+  </div>
+  <footer class="footerBottom">
+      <a class="footer-position">
+        <img src="https://www.gabrielbjb.my.id/en/Project/Bencana%20App/iconwinui3.png" style=" width: 80px;">
+        <span style="padding-left: 10px; " id="identity"></span>
+      </a>
+      <div style="max-width: 388px;">
+        <a id="FooterMessage" style="line-height: 16px; margin: 3px 0; font-weight: initial; "></a>
+      </div>
+      <nav class="nav-position navbottom-position-phone">
+        <ul class="nav-links nav-links-position-phone">
+            <li>
+              <a href="/Projects/Indonesia Disaster App/Privacy_Policy" id="KebijakanPrivasiNav"></a>
+          </li>
+          <li>
+            <a href="#" class="active" id="HubungiNav"></a>
+          </li>
+          <li>© Gabrielbjb</li>
+        </ul>
+      </nav>
+    </footer>
+  <script src="/Assets/AssetsGlobal/JavaScripts/NavBar.js"></script>
+  <script src="/Assets/AssetsGlobal/JavaScripts/WindowMessage.js"></script>
+  <script src="/Assets/AssetsGlobal/JavaScripts/LoadLanguage.js"></script>
+  <script src="/Assets/AssetsGlobal/JavaScripts/ForCookie.js"></script>
+  <script src="/Assets/IDA/JavaScripts/ForSettings.js"></script>
+  <script>
+      function LanguageFunc() {
+        CallLanguage(["/Assets/IDA/JSON/IDALanguage.json", "/Assets/IDA/JSON/IDANavBarLanguage.json"]);
+      }
+      LanguageFunc();
+  </script>
+</body>
+</html>

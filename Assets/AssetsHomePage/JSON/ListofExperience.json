@@ -1,0 +1,72 @@
+[
+    {
+        "id": "web",
+        "experienceName" : ["JavaScript", "HTML", "CSS"],
+        "confidence": [7, 9, 9]
+    },
+    {
+        "id": "java",
+        "experienceName" : ["Java"],
+        "confidence": [5]
+    },
+    {
+        "id": "csharp",
+        "experienceName" : ["C#", ".NET", "XAML"],
+        "confidence": [8, 8, 8]
+    },
+    {
+        "id": "python",
+        "experienceName" : ["Python"],
+        "confidence": [9]
+    },
+    {
+        "id": "go",
+        "experienceName" : ["Go"],
+        "confidence": [6]
+    },
+    {
+        "id": "laravel",
+        "experienceName" : ["PHP", "Laravel"],
+        "confidence": [7, 7]
+    },
+    {
+        "id": "api",
+        "experienceName" : ["RESTful API"],
+        "confidence": [9]
+    },
+    {
+        "id": "flutter",
+        "experienceName" : ["Dart", "Flutter"],
+        "confidence": [6, 6]
+    },
+    {
+        "id": "git",
+        "experienceName" : ["Git", "GitHub"],
+        "confidence": [7, 9]
+    },
+    {
+        "id": "database",
+        "experienceName" : ["MySQL"],
+        "confidence": [7]
+    },
+    {
+        "id": "designuiux",
+        "experienceName" : ["Figma"],
+        "confidence": [7]
+    },
+    {
+        "id": "os",
+        "experienceName" : ["Windows", "Linux"],
+        "confidence": [9, 7]
+    },
+    {
+        "id": "networking",
+        "experienceName" : ["Networking Basics"],
+        "confidence": [6]
+    },
+    {
+        "id": "adobe",
+        "experienceName" : ["Adobe Photoshop", "Adobe Premiere Pro", "Adobe After Effects"],
+        "confidence": [8, 8, 6]
+    }
+]

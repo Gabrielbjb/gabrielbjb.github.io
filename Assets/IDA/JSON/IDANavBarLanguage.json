@@ -1,0 +1,38 @@
+{
+    "0" :{
+        "GempaNav" : "Gempa",
+        "TsunamiNav" : "Tsunami",
+        "CuacaNav" : "Cuaca",
+        "UdaraNav" : "Udara",
+        "PrakiraanNav" : "Prakiraan",
+        "SiklonNav" : "Siklon",
+        "PelanggaranNav" : "Pelanggaran",
+        "PerairanNav" : "Perairan",
+        "LayananDaruratNav" : "Layanan Darurat",
+        "SettingsNav" : "Pengaturan",
+        "BerandaNav" : "Beranda",
+        "KebijakanPrivasiNav" : "Kebijakan Privasi",
+        "HubungiNav" : "Hubungi",
+        "BantuanNav" : "Bantuan",
+        "FooterMessage" : "Aplikasi Bencana Indonesia adalah aplikasi yang menyediakan informasi terkini mengenai bencana yang terjadi di seluruh wilayah Indonesia — seperti gempa bumi, tsunami, pelabuhan, perairan, cuaca, kualitas udara, dan masih banyak lagi!",
+        "identity" : "Aplikasi Bencana Indonesia"
+    },
+    "1" :{
+        "GempaNav" : "Earthquake",
+        "TsunamiNav" : "Tsunami",
+        "CuacaNav" : "Weather",
+        "UdaraNav" : "Air",
+        "PrakiraanNav" : "Forecast",
+        "SiklonNav" : "Cyclone",
+        "PelanggaranNav" : "Violations",
+        "PerairanNav" : "Waters",
+        "LayananDaruratNav" : "Emergency Services",
+        "SettingsNav" : "Settings",
+        "BerandaNav" : "Home",
+        "KebijakanPrivasiNav" : "Privacy Policy",
+        "HubungiNav" : "Contact",
+        "BantuanNav" : "Help",
+        "FooterMessage" : "The Indonesia Disaster App is an application that provides up-to-date information about disasters occurring throughout Indonesia — such as earthquakes, tsunamis, harbors, waters, weather, air quality, and much more!",
+        "identity" : "Indonesia Disaster App"
+    }
+}

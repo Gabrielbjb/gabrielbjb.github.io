@@ -1,0 +1,16 @@
+{
+    "0":
+    {
+        "Description": "Selamat datang di halaman donasi. Terima kasih atas dukungan Anda! Tapi saat ini developer hanya menerima donasi melalui QRIS. Silakan pindai kode QR di bawah ini untuk memberikan donasi Anda. Setiap kontribusi sangat berarti bagi developer dan membantu developer terus mengembangkan proyek-proyek yang ada. Terima kasih atas kebaikan hati Anda!",
+        "Warning": "Perlu dicatat bahwa donasi ini tidak dapat dikembalikan. Pastikan untuk memeriksa kembali jumlah donasi sebelum mengirimkannya. Terima kasih atas pengertian Anda!",
+        "Title": "Donasi",
+        "download": "Unduh"
+    },
+    "1":
+    {
+        "Description": "Welcome to the donation page. Thank you for your support! However, we currently only accept donations via QRIS. Please scan the QR code below to make your donation. Every contribution is greatly appreciated by the developer and helps continue the development of existing projects. Thank you for your kindness!",
+        "Warning": "Please note that these donations are non-refundable. Make sure to double-check the donation amount before sending it. Thank you for your understanding!",
+        "Title": "Donation",
+        "download": "Download"
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daftar Proyek</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 30px;
+    }
+
+    .project-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card-container {
+      width: 250px;
+    }
+
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card {
+      background-color: #222;
+      color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: 250px; /* Tetap */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-image {
+      background-size: cover;
+      background-position: center;
+      height: 100px;
+      position: relative;
+    }
+
+    .card-header {
+      position: absolute;
+      bottom: 4px;
+      left: 4px;
+    }
+
+    .card-header img {
+      width: 25px;
+      margin: 4px 4px 0 0;
+    }
+
+    .card-summary {
+      padding: 10px;
+      font-size: 13px;
+    }
+
+    .card-details {
+        font-size: 12px;
+        overflow: hidden;
+        transition: opacity 0.3s ease, max-height 0.3s ease, padding 0.3s ease;
+        opacity: 0;
+        max-height: 0;
+        padding: 0 10px; /* hanya padding horizontal saat non-hover */
+    }
+
+    .card:hover .card-details {
+        opacity: 1;
+        max-height: 100px; /* atau sesuai kebutuhan */
+        padding: 10px;     /* padding penuh saat hover */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Daftar Proyek Saya</h2>
+  <div class="project-wrapper">
+
+    <!-- Contoh Proyek -->
+    <div class="card-container">
+      <a href="https://gabrielbjb.my.id?language=1" class="card-link">
+        <div class="card">
+          <div class="card-image" style="background-image: url('/AssetsProject/abiID.png');">
+            <div class="card-header">
+              <img src="/Icons/net.svg" alt="net">
+              <img src="/Icons/cs.svg" alt="cs">
+            </div>
+          </div>
+          <div class="card-summary">
+            <p>Aplikasi Bencana Indonesia...</p>
+          </div>
+          <div class="card-details">
+            <p>
+              Aplikasi Bencana Indonesia adalah aplikasi yang menyediakan informasi bencana secara real-time dan peringatan dini.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Tambahkan proyek lain seperti ini -->
+
+  </div>
+
+</body>
+</html>

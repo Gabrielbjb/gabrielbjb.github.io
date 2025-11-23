@@ -1,0 +1,182 @@
+[
+    {
+        "0": {
+            "ProjectName": "Aplikasi Bencana Indonesia",
+            "ThumbnailImage": "abiID.png",
+            "Description": "Aplikasi Bencana Indonesia adalah aplikasi yang menyediakan informasi terkini mengenai bencana yang terjadi di seluruh wilayah Indonesia. Seperti Gempa bumi, Tsunami, Pelabuhan, Perairan, Cuaca, Kualitas Udara, Dan masih banyak lagi!",
+            "TryText": null,
+            "SourceCodeText": null,
+            "MoreDetailsText": null,
+            "SoftwareUsesText": null,
+            "PlatformsText": null
+        },
+        "1": {
+            "ProjectName": "Indonesia Disaster App",
+            "ThumbnailImage": "abiEN.png",
+            "Description": "Indonesia Disaster App is an app that provides up-to-date information on disasters occurring across Indonesia. These include earthquakes, tsunamis, ports, waters, weather, air quality, and much more!",
+            "TryText": null,
+            "SourceCodeText": null,
+            "MoreDetailsText": null,
+            "SoftwareUsesText": null,
+            "PlatformsText": null
+        },
+        
+        "SoftwareUses": ["net", "cs"],
+        "Platforms": ["windows"],
+        "URLTry": "https://apps.microsoft.com/detail/9n2f8krkltj8",
+        "URLSourceCode": null,
+        "URLMoreDetails": "./Indonesia%20Disaster%20App",
+        "iconSourceCode": null,
+        "iconTry": "msstore.svg"
+    },
+    {
+        "0": {
+            "ProjectName": "Magma-Indonesia-API",
+            "ThumbnailImage": "umi.png",
+            "Description": "Kode ini akan mengambil data yang ada di website Magma Indonesia dan menjadikannya sebuah .json!",
+            "TryText": null,
+            "SourceCodeText": null,
+            "MoreDetailsText": null,
+            "SoftwareUsesText": null,
+            "PlatformsText": null
+        },
+        "1": {
+            "ProjectName": "Magma-Indonesia-API",
+            "ThumbnailImage": "umi.png",
+            "Description": "This code will fetch data from the Magma Indonesia website and convert it into a .json file!",
+            "TryText": null,
+            "SourceCodeText": null,
+            "MoreDetailsText": null,
+            "SoftwareUsesText": null,
+            "PlatformsText": null
+        },
+        
+        "SoftwareUses": ["py"],
+        "Platforms": [],
+        "URLTry": null,
+        "URLSourceCode": "https://github.com/Gabrielbjb/Magma-Indonesia-API",
+        "URLMoreDetails": null,
+        "iconSourceCode": null,
+        "iconTry": null
+    },
+    {
+        "0": {
+            "ProjectName": "Deteksi Korban Kecelakaan Pengendara Motor",
+            "ThumbnailImage": "dkpkID.png",
+            "Description": "Sebuah projek yang dapat mendeteksi korban kecelakaan pengendara motor dengan video CCTV menggunakan metode YOLOv9.",
+            "TryText": null,
+            "SourceCodeText": null,
+            "MoreDetailsText": null,
+            "SoftwareUsesText": null,
+            "PlatformsText": null
+        },
+        "1": {
+            "ProjectName": "Motorcycle Accident Victim Detection",
+            "ThumbnailImage": "dkpkEN.png",
+            "Description": "This project can detect motorcycle accident victims using CCTV footage and the YOLOv9 method!",
+            "TryText": null,
+            "SourceCodeText": null,
+            "MoreDetailsText": null,
+            "SoftwareUsesText": null,
+            "PlatformsText": null
+        },
+        
+        "SoftwareUses": ["py"],
+        "Platforms": [],
+        "URLTry": null,
+        "URLSourceCode": "https://github.com/Gabrielbjb/Vehicle-accident-victim-detection",
+        "URLMoreDetails": "https://gabrielbjb.my.id",
+        "iconSourceCode": null,
+        "iconTry": null
+    },
+    {
+        "0": {
+            "ProjectName": "Growtopia Wiki Indonesia",
+            "ThumbnailImage": "gtidyt.png",
+            "Description": "Growtopia Wiki adalah sebuah Ensiklopedia Gratis tentang Growtopia yang dapat diedit siapapun, termasuk kamu! Kalian dapat membantu Channel Growtopia Wiki ini dengan cara menekan tombol Like, Share dan Subscribe!",
+            "TryText": null,
+            "SourceCodeText": null,
+            "MoreDetailsText": null,
+            "SoftwareUsesText": "Aplikasi",
+            "PlatformsText": null
+        },
+        "1": {
+            "ProjectName": "Growtopia Wiki Indonesia",
+            "ThumbnailImage": "gtidyt.png",
+            "Description": "Growtopia Wiki is an Encyclopedia about Growtopia that can be edited by anyone, including you! You can help this Growtopia Wiki Channel by pressing the Like, Share, and Subscribe buttons!",
+            "TryText": null,
+            "SourceCodeText": null,
+            "MoreDetailsText": null,
+            "SoftwareUsesText": "Software",
+            "PlatformsText": null
+        },
+        
+        "SoftwareUses": ["premiere","photoshop","aftereffect","obs"],
+        "Platforms": ["yt"],
+        "URLTry": null,
+        "URLSourceCode": null,
+        "URLMoreDetails": "https://www.youtube.com/@growtopia_wiki",
+        "iconSourceCode": null,
+        "iconTry": null
+    },
+    {
+        "0": {
+            "ProjectName": "Growtopia-Info",
+            "ThumbnailImage": "gtapi.png",
+            "Description": "Kode ini dapat mencari info apa pun di Growtopia, seperti gambar, deskripsi, status server, dan lainnya!",
+            "TryText": null,
+            "SourceCodeText": null,
+            "MoreDetailsText": null,
+            "SoftwareUsesText": null,
+            "PlatformsText": null
+        },
+        "1": {
+            "ProjectName": "Growtopia-Info",
+            "ThumbnailImage": "gtapi.png",
+            "Description": "This code can search for any information in Growtopia, such as images, descriptions, server status, and more!",
+            "TryText": null,
+            "SourceCodeText": null,
+            "MoreDetailsText": null,
+            "SoftwareUsesText": null,
+            "PlatformsText": null
+        },
+        
+        "SoftwareUses": ["py"],
+        "Platforms": [],
+        "URLTry": null,
+        "URLSourceCode": "https://github.com/Gabrielbjb/growtopia-info",
+        "URLMoreDetails": null,
+        "iconSourceCode": null,
+        "iconTry": null
+    },
+    {
+        "0": {
+            "ProjectName": "Pendeteksi Gempa",
+            "ThumbnailImage": "pgdc.png",
+            "Description": "Sebuah robot Discord yang dapat memberitau bencana yang ada di Indonesia.",
+            "TryText": null,
+            "SourceCodeText": null,
+            "MoreDetailsText": null,
+            "SoftwareUsesText": null,
+            "PlatformsText": null
+        },
+        "1": {
+            "ProjectName": "Earthquake Detector",
+            "ThumbnailImage": "pgdc.png",
+            "Description": "This is a Discord bot that can inform about disasters occurring in Indonesia.",
+            "TryText": null,
+            "SourceCodeText": null,
+            "MoreDetailsText": null,
+            "SoftwareUsesText": null,
+            "PlatformsText": null
+        },
+        
+        "SoftwareUses": ["py"],
+        "Platforms": ["dc"],
+        "URLTry": null,
+        "URLSourceCode": null,
+        "URLMoreDetails": "https://gabrielbjb.my.id",
+        "iconSourceCode": null,
+        "iconTry": null
+    }
+]

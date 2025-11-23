@@ -1,0 +1,20 @@
+{
+    "0":
+    {
+        "Beranda": "Home",
+        "Donasi": "Donation",
+        "ProjectsNav": "Projects",
+        "SettingsNav": "Settings",
+        "PrivacyNav": "Privacy & Policy",
+        "SosmedNav": "Social Media"
+    },
+    "1":
+    {
+        "Beranda": "Beranda",
+        "Donasi": "Donasi",
+        "ProjectsNav": "Proyek",
+        "SettingsNav": "Pengaturan",
+        "PrivacyNav": "Privasi & Kebijakan",
+        "SosmedNav": "Media Sosial"
+    }
+}

@@ -1,0 +1,320 @@
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000924">
+    <link rel="icon" type="image/x-icon" href="/Assets/AssetsHomePage/Images/Sparkles.gif">
+    <title id="Title"></title>
+    <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/NavBar.css">
+    <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/WindowMessage.css">
+    <link rel="stylesheet" href="/Assets/AssetsHomePage/CSS/StarsBackground.css">
+    <link rel="stylesheet" href="/Assets/AssetsGlobal/CSS/NormalTheme.css">
+    <style>
+      .wrapProgrammer {
+        flex-direction: row;
+      }
+
+      .wrapProject {
+        flex-direction: column;
+      }
+
+      .ConfidenceShow {
+        width: 0%;
+        transition: width 1s;
+      }
+
+      .buttonSVG {
+        margin: 10px;
+        padding: 10px;
+        background-color: var(--background-main);
+        border-radius: var(--border-radius);
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+      }
+
+      .buttonSVG:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      .buttonSVG.active {
+        background-color: rgba(255, 255, 145, 0.3);
+      }
+
+      .buttonSVG img {
+        width: 70px;
+      }
+
+      .slider-wrapper {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .slider-container {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        /* Hide scrollbar */
+        scrollbar-width: none;
+        /* Firefox */
+      }
+
+      .slider-container::-webkit-scrollbar {
+        display: none;
+        /* Chrome, Safari, Edge */
+      }
+
+      .slide {
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        padding: 20px;
+        width: 100%;
+      }
+
+      .box {
+        height: 200px;
+        border-radius: 10px;
+        font-size: 2em;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: space-between;
+        align-items: flex-start;
+        transform: none;
+        transition: transform 0.3s;
+      }
+
+      .box:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s;
+      }
+
+      .box div:nth-child(1) {
+        padding: 4px;
+        display: flex;
+        background-color: #00092487;
+        width: fit-content;
+        border-bottom-right-radius: 10px;
+        gap: 5px;
+      }
+
+      .box div:nth-child(2) {
+        background-color: #00092487;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 6px;
+        height: 60px;
+      }
+
+      @media (min-width: 600px) {
+        .slide {
+          min-width: 50%;
+          width: 0px;
+        }
+
+        .dots span:nth-child(3) {
+          display: none;
+        }
+      }
+
+      @media (min-width: 900px) {
+        .slide {
+          width: 33.3333%;
+          min-width: auto;
+        }
+
+        .dots {
+          display: none;
+        }
+      }
+
+      @media (max-width: 960px) {
+        .wrapProgrammer {
+          flex-direction: column !important;
+        }
+
+        .wrapProgrammer>div {
+          width: 100% !important;
+        }
+
+        .padding-screen {
+          padding: 0px !important;
+          transition: padding 1s;
+        }
+      }
+
+      .dots {
+        text-align: center;
+        margin: 2px 0;
+      }
+
+      .dot {
+        height: 12px;
+        width: 12px;
+        margin: 0 5px;
+        background-color: gold;
+        border-radius: 50%;
+        display: inline-block;
+        opacity: 0.5;
+        cursor: pointer;
+        transition: opacity 0.3s;
+      }
+
+      .dot.active {
+        opacity: 1;
+        background-color: #d1b50b;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="star-section"></section>
+    <header id="navbar" style="position: absolute;">
+      <nav class="footer-position nav-position nav-position-top">
+        <div id="identity" class="">Gabrielbjb</div>
+        <ul class="nav-links">
+          <li>
+            <a id="Home" href="/"></a>
+          </li>
+          <li>
+            <a id="DonationNav" href="/Donation"></a>
+          </li>
+          <li>
+            <a id="ProjectsNav" href="/Projects"></a>
+          </li>
+          <li>
+            <a style="cursor: pointer;" id="SettingsNav"></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="padding-screen">
+      <div class="overlay">
+        <div>
+          <img src="https://avatars.githubusercontent.com/u/111344809" class="iconDetails" style="border-radius: 50%;width: 25%;">
+          <h1 id="Welcome"></h1>
+          <p id="WelcomeMessage"></p>
+        </div>
+      </div>
+      <div class="overlay">
+        <div class="wrapDiv wrapProgrammer">
+          <div style=" width: 50%; ">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="70px" fill="gold">
+                <path d="M440-360h80l6-50q8-3 14.5-7t11.5-9l46 20 40-68-40-30q2-8 2-16t-2-16l40-30-40-68-46 20q-5-5-11.5-9t-14.5-7l-6-50h-80l-6 50q-8 3-14.5 7t-11.5 9l-46-20-40 68 40 30q-2 8-2 16t2 16l-40 30 40 68 46-20q5 5 11.5 9t14.5 7l6 50Zm40-100q-25 0-42.5-17.5T420-520q0-25 17.5-42.5T480-580q25 0 42.5 17.5T540-520q0 25-17.5 42.5T480-460ZM240-80v-172q-57-52-88.5-121.5T120-520q0-150 105-255t255-105q125 0 221.5 73.5T827-615l52 205q5 19-7 34.5T840-360h-80v120q0 33-23.5 56.5T680-160h-80v80H240Z"></path>
+              </svg>
+              <div class="custom-select-wrapper">
+                <h1 id="Experience"></h1>
+              </div>
+              <p id="ExperienceMessage"></p>
+            </div>
+            <div id="ListOfExperience"></div>
+          </div>
+          <div style=" width: 50%; display: flex; align-items: center;">
+            <div style="display: flex ; flex-wrap: wrap; flex-direction: row; justify-content: center; transition: flex-direction 0.3s; ">
+              <div class="buttonSVG">
+                <img src="Assets/AssetsIcon/web.svg" alt="web">
+              </div>
+              <div class="buttonSVG">
+                <img src="Assets/AssetsIcon/jv.svg" alt="java">
+              </div>
+              <div class="buttonSVG">
+                <img src="Assets/AssetsIcon/cs.svg" alt="csharp">
+              </div>
+              <div class="buttonSVG">
+                <img src="Assets/AssetsIcon/py.svg" alt="python">
+              </div>
+              <div class="buttonSVG">
+                <img src="Assets/AssetsIcon/go.svg" alt="go">
+              </div>
+              <div class="buttonSVG">
+                <img src="Assets/AssetsIcon/laravel.svg" alt="laravel">
+              </div>
+              <div class="buttonSVG">
+                <img src="Assets/AssetsIcon/API.svg" alt="api">
+              </div>
+              <div class="buttonSVG">
+                <img src="Assets/AssetsIcon/flutter.svg" alt="flutter">
+              </div>
+              <div class="buttonSVG">
+                <img src="Assets/AssetsIcon/git.svg" alt="git">
+              </div>
+              <div class="buttonSVG">
+                <img src="Assets/AssetsIcon/dbms.svg" alt="database">
+              </div>
+              <div class="buttonSVG">
+                <img src="Assets/AssetsIcon/os.svg" alt="os">
+              </div>
+              <div class="buttonSVG">
+                <img src="Assets/AssetsIcon/networking.svg" alt="networking">
+              </div>
+              <div class="buttonSVG">
+                <img src="Assets/AssetsIcon/adobe.svg" alt="adobe">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay">
+        <div class="wrapDiv wrapProject">
+          <div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="70px" fill="gold">
+                <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm80-80h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm200-190q13 0 21.5-8.5T510-820q0-13-8.5-21.5T480-850q-13 0-21.5 8.5T450-820q0 13 8.5 21.5T480-790ZM200-200v-560 560Z"></path>
+              </svg>
+              <h1 id="Projects"></h1>
+              <p id="ProjectsMessage"></p>
+            </div>
+          </div>
+          <div>
+            <div class="slider-wrapper">
+              <div class="slider-container" id="slider"></div>
+              <div style="position: relative; padding: 0 20px; height: 20px;">
+                <div class="dots" id="dots" style="position: absolute; left: 50%; transform: translateX(-50%);"></div>
+                <a id="MoreProject" href="/Projects" style="position: absolute; right: 0; color: gold; font-size: 12px; text-decoration: none;"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footerBottom">
+      <a class="footer-position">
+        <img src="/Assets/AssetsHomePage/Images/Sparkles.gif" style=" width: 80px;">
+        <span style="padding-left: 10px; ">Gabrielbjb</span>
+      </a>
+      <div style="max-width: 388px;">
+        <a id="FooterMessage" style="line-height: 16px; margin: 3px 0; font-weight: initial; ">Situs ini merupakan portofolio resmi Gabrielbjb. Menampilkan proyek-proyek, karya, dan informasi lainnya.</a>
+      </div>
+      <nav class="nav-position navbottom-position-phone">
+        <ul class="nav-links nav-links-position-phone">
+          <li>
+            <a id="PrivacyNav" href="/Privacy_Policy"></a>
+          </li>
+          <li>
+            <a href="/Social_Media/" id="SosmedNav"></a>
+          </li>
+          <li>© Gabrielbjb</li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="/Assets/AssetsGlobal/JavaScripts/NavBar.js"></script>
+    <script src="/Assets/AssetsGlobal/JavaScripts/WindowMessage.js"></script>
+    <script src="/Assets/AssetsHomePage/JavaScripts/SliderProject.js"></script>
+    <script src="/Assets/AssetsGlobal/JavaScripts/LoadLanguage.js"></script>
+    <script src="/Assets/AssetsGlobal/JavaScripts/ForCookie.js"></script>
+    <script src="/Assets/AssetsHomePage/JavaScripts/StarsBackground.js"></script>
+    <script src="/Assets/AssetsHomePage/JavaScripts/ForSettings.js"></script>
+    <script src="/Assets/AssetsHomePage/JavaScripts/ForExperience.js"></script>
+    <script>
+      function LanguageFunc() {
+        CallLanguage(["/Assets/AssetsHomePage/JSON/HomePageLanguage.json", "/Assets/AssetsGlobal/JSON/NavBarLanguage.json"]);
+      }
+      LanguageFunc();
+    </script>
+  </body>
+</html>

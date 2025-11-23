@@ -12,7 +12,7 @@ function CreateProjectCard(language) {
     }
     let tileHTML = `
     <div class="slide">
-      <a href="https://gabrielbjb.my.id?language=1" style=" text-decoration: none; ">
+      <a href="/Projects" style=" text-decoration: none; ">
         <div class="box" style="background-image: url(/Assets/AssetsProject/${dataGlobal[i][language].ThumbnailImage});">
           <div>
               ${tileHTMLSkill}

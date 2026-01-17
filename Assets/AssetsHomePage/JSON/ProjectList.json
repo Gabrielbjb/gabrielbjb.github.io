@@ -21,7 +21,7 @@
             "PlatformsText": null
         },
         
-        "SoftwareUses": ["html","css","js","laravel","php","mysql"],
+        "SoftwareUses": ["css","js","laravel","php","mysql"],
         "Platforms": [],
         "URLTry": null,
         "URLSourceCode": ""

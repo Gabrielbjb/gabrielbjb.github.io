@@ -1,6 +1,33 @@
 [
     {
         "0": {
+            "ProjectName": "Better kalselprov.go.id Website",
+            "ThumbnailImage": "betterkalsel.png",
+            "Description": "Contoh situs web yang ditingkatkan dari kalselprov.go.id dengan desain yang lebih baik, informasi yang lebih lengkap, dan pengalaman pengguna yang lebih baik dibandingkan situs aslinya.",
+            "TryText": null,
+            "SourceCodeText": "https://github.com/Gabrielbjb/better-kalselprov.go.id-website",
+            "MoreDetailsText": null,
+            "SoftwareUsesText": null,
+            "PlatformsText": null
+        },
+        "1": {
+            "ProjectName": "Better kalselprov.go.id Website",
+            "ThumbnailImage": "betterkalsel.png",
+            "Description": "An improved version of the kalselprov.go.id website with a better design, more comprehensive information, and an enhanced user experience compared to the original site.",
+            "TryText": null,
+            "SourceCodeText": "https://github.com/Gabrielbjb/better-kalselprov.go.id-website",
+            "MoreDetailsText": null,
+            "SoftwareUsesText": null,
+            "PlatformsText": null
+        },
+        
+        "SoftwareUses": ["html","css","js","laravel","php","mysql"],
+        "Platforms": [],
+        "URLTry": null,
+        "URLSourceCode": ""
+    },
+    {
+        "0": {
             "ProjectName": "Aplikasi Bencana Indonesia",
             "ThumbnailImage": "abiID.png",
             "Description": "Aplikasi Bencana Indonesia adalah aplikasi yang menyediakan informasi terkini mengenai bencana yang terjadi di seluruh wilayah Indonesia. Seperti Gempa bumi, Tsunami, Pelabuhan, Perairan, Cuaca, Kualitas Udara, Dan masih banyak lagi!",
@@ -175,7 +202,7 @@
         "Platforms": ["dc"],
         "URLTry": null,
         "URLSourceCode": null,
-        "URLMoreDetails": "https://gabrielbjb.my.id",
+        "URLMoreDetails": "https://www.gabrielbjb.my.id/id/Projek/Pendeteksi_Gempa/",
         "iconSourceCode": null,
         "iconTry": null
     }

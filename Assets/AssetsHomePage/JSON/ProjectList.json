@@ -4,7 +4,7 @@
             "ProjectName": "MyKalsel",
             "ThumbnailImage": "betterkalsel.png",
             "Description": "Contoh situs web yang ditingkatkan dari kalselprov.go.id dengan desain yang lebih baik, informasi yang lebih lengkap, dan pengalaman pengguna yang lebih baik dibandingkan situs aslinya.",
-            "TryText": null,
+            "TryText": "Kunjungi Website (Masih pengembangan)",
             "SourceCodeText": null,
             "MoreDetailsText": null,
             "SoftwareUsesText": null,
@@ -14,7 +14,7 @@
             "ProjectName": "MyKalsel",
             "ThumbnailImage": "betterkalsel.png",
             "Description": "An improved version of the kalselprov.go.id website with a better design, more comprehensive information, and an enhanced user experience compared to the original site.",
-            "TryText": null,
+            "TryText": "Visit the Website (Still in development)",
             "SourceCodeText": null,
             "MoreDetailsText": null,
             "SoftwareUsesText": null,
@@ -23,7 +23,7 @@
         
         "SoftwareUses": ["css","js","laravel","php","mysql"],
         "Platforms": [],
-        "URLTry": null,
+        "URLTry": "https://test.gabrielbjb.my.id/,
         "URLSourceCode": "https://github.com/Gabrielbjb/better-kalselprov.go.id-website"
     },
     {

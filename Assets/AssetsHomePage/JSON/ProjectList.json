@@ -6,7 +6,7 @@
             "Description": "Contoh situs web yang ditingkatkan dari kalselprov.go.id dengan desain yang lebih baik, informasi yang lebih lengkap, dan pengalaman pengguna yang lebih baik dibandingkan situs aslinya.",
             "TryText": null,
             "SourceCodeText": null,
-            "MoreDetailsText": null,
+            "MoreDetailsText": "Kunjungi Website (Masih pengembangan)",
             "SoftwareUsesText": null,
             "PlatformsText": null
         },
@@ -16,7 +16,7 @@
             "Description": "An improved version of the kalselprov.go.id website with a better design, more comprehensive information, and an enhanced user experience compared to the original site.",
             "TryText": null,
             "SourceCodeText": null,
-            "MoreDetailsText": null,
+            "MoreDetailsText": "Visit the Website (Still in development)",
             "SoftwareUsesText": null,
             "PlatformsText": null
         },
@@ -24,6 +24,7 @@
         "SoftwareUses": ["css","js","laravel","php","mysql"],
         "Platforms": [],
         "URLTry": null,
+        "URLMoreDetails": "https://test.gabrielbjb.my.id/",
         "URLSourceCode": "https://github.com/Gabrielbjb/better-kalselprov.go.id-website"
     },
     {

@@ -50,6 +50,11 @@
         "confidence": [7]
     },
     {
+        "id": "arcgis",
+        "experienceName" : ["ArcGIS"],
+        "confidence": [8]
+    },
+    {
         "id": "designuiux",
         "experienceName" : ["Figma"],
         "confidence": [7]

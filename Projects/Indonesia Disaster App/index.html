@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#000924">
@@ -218,8 +219,8 @@
   <div class="wrapper">
     <!-- KIRI BERGANTI SAAT SCROLL -->
     <div class="left-scroll">
-      <section class="content-section" id="HomePage">
-        <img style=" border-radius: 10px; filter: drop-shadow(1px 3px 0 rgba(0, 0, 0, 0.4)); " class="logo" src="https://www.gabrielbjb.my.id/en/Project/Bencana%20App/iconwinui3.png" alt="Logo Indonesia Disaster App">
+      <section class="content-section" id="HomePage" class="logo" alt="Logo Indonesia Disaster App" style=" border-radius: 10px; filter: drop-shadow(1px 3px 0 rgba(0, 0, 0, 0.4)); " >
+        <div id="lottie"></div>
         <h1>Indonesia Disaster App</h1>
         <p>
           Aplikasi Bencana Indonesia adalah aplikasi yang menyediakan informasi terkini mengenai
@@ -430,6 +431,7 @@
       sections.forEach(section => {
       observer.observe(section);
     });
+    const animation = lottie.loadAnimation({ container: document.getElementById('lottie'), renderer: 'svg', loop: true, autoplay: true, path: '/Assets/IDA/Images/Lottie.svg' });
   </script>
 </body>
 </html>

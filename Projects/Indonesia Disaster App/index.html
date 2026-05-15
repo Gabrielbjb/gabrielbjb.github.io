@@ -220,7 +220,7 @@
     <!-- KIRI BERGANTI SAAT SCROLL -->
     <div class="left-scroll">
       <section class="content-section" id="HomePage" class="logo" alt="Logo Indonesia Disaster App" style=" border-radius: 10px; filter: drop-shadow(1px 3px 0 rgba(0, 0, 0, 0.4)); " >
-        <div id="lottie"></div>
+        <div id="lottie" style="width: 10%; ">
         <h1>Indonesia Disaster App</h1>
         <p>
           Aplikasi Bencana Indonesia adalah aplikasi yang menyediakan informasi terkini mengenai
@@ -431,7 +431,7 @@
       sections.forEach(section => {
       observer.observe(section);
     });
-    const animation = lottie.loadAnimation({ container: document.getElementById('lottie'), renderer: 'svg', loop: true, autoplay: true, path: '/Assets/IDA/Images/Lottie.json' });
+    const animation = lottie.loadAnimation({ container: document.getElementById('lottie'), renderer: 'svg', loop: false, autoplay: true, path: '/Assets/IDA/Images/Lottie.json' });
   </script>
 </body>
 </html>

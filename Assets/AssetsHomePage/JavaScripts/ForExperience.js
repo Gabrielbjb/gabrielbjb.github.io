@@ -22,6 +22,8 @@ document.addEventListener('click', function (e) {
         e.target.closest('.buttonSVG').classList.add('active');
         const selectedTag = e.target.closest('.buttonSVG').querySelector('img').getAttribute('alt');
         dataExperience.forEach(Experience => {
+            console.log(Experience["id"]);
+            console.log(selectedTag);
             if (Experience["id"] === selectedTag) {
                 let IndexOfExperience = 0;
                 let ListOfExperienceHTML = "";

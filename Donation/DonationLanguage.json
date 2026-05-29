@@ -1,14 +1,14 @@
 {
     "0":
     {
-        "Description": "Selamat datang di halaman donasi. Terima kasih atas dukungan Anda! Tapi saat ini developer hanya menerima donasi melalui QRIS. Silakan pindai kode QR di bawah ini untuk memberikan donasi Anda. Setiap kontribusi sangat berarti bagi developer dan membantu developer terus mengembangkan proyek-proyek yang ada. Terima kasih atas kebaikan hati Anda!",
+        "Description": "Selamat datang di halaman donasi. Terima kasih atas dukungan Anda! Jika kamu punya punya metode pembayaran yang kompatibel dengan QRIS (Indonesia), PromptPay (Thailand), DuitNow (Malaysia), SGQR (Singapura), JPQR (Jepang), Alipay QR (China), atau negara ASEAN yang bergabung RPC untuk memindai kode QR di bawah ini untuk memberikan donasi Anda. Jika pembayaran anda tidak kompitabel dengan QRIS negara anda tidak tercantum, silahkan untuk menggunakan Ko-fi yang ada di bawah QRIS. Setiap kontribusi sangat berarti bagi developer dan membantu developer terus mengembangkan proyek-proyek yang ada. Terima kasih atas kebaikan hati Anda!",
         "Warning": "Perlu dicatat bahwa donasi ini tidak dapat dikembalikan. Pastikan untuk memeriksa kembali jumlah donasi sebelum mengirimkannya. Terima kasih atas pengertian Anda!",
         "Title": "Donasi",
         "download": "Unduh"
     },
     "1":
     {
-        "Description": "Welcome to the donation page. Thank you for your support! However, we currently only accept donations via QRIS. Please scan the QR code below to make your donation. Every contribution is greatly appreciated by the developer and helps continue the development of existing projects. Thank you for your kindness!",
+        "Description": "Welcome to the donation page. Thank you for your support! If you have a payment method compatible with QRIS (Indonesia), PromptPay (Thailand), DuitNow (Malaysia), SGQR (Singapore), JPQR (Japan), Alipay QR (China), or any ASEAN country joined in the RPC, please scan the QR code below to make your donation. If your payment method is incompatible or your country is not listed, feel free to use the Ko-fi link below the QR code. Every contribution means a lot to the developer and helps keep these projects growing. Thank you for your kindness!",
         "Warning": "Please note that these donations are non-refundable. Make sure to double-check the donation amount before sending it. Thank you for your understanding!",
         "Title": "Donation",
         "download": "Download"
